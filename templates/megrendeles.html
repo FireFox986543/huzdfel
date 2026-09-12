@@ -1,0 +1,95 @@
+{% import 'huzdfel_macros.html' as macros %}
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megrendelés – {{ titlename }}</title>
+    {% include 'huzdfel_resources.html' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/kosar.css') }}">
+</head>
+
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main>
+        <div class="progress">
+            <a class="item" href="/kosar">Kosár</a>
+            <a class="item" href="/fizetes">Szállítás & Fizetés</a>
+            <div class="item active">Megrendelés</div>
+        </div>
+        <div class="card" style="width: 600px; margin: 20px auto;">
+            <div class="flex" style="justify-content: space-between;">
+                <span style="font-weight: bold;">Összes termék:</span>
+                <span>{{ items|length }}</span>
+            </div>
+            <div class="flex" style="justify-content: space-between;">
+                <span style="font-weight: bold;">Termékek ára:</span>
+                <span>{{ format_number(price) }},- Ft</span>
+            </div>
+            <div class="flex" style="justify-content: space-between;">
+                <span style="font-weight: bold;">Szállítási díj:</span>
+                <span>{{ '1 490' if price <= 20000 else '0'}},- Ft</span>
+            </div>
+            {% if utanvet %}
+            <div class="flex" style="justify-content: space-between;">
+                <span style="font-weight: bold;">Utánvét díj:</span>
+                <span>490,- Ft</span>
+            </div>
+            {% endif %}
+            <hr>
+            <div class="flex" style="justify-content: space-between; color: var(--primary); font-weight: bold;">
+                <span style="font-weight: bold;">Fizetendő összeg:</span>
+                <span>{{ format_number(price + (490 if utanvet else 0) + ( 1490 if price <= 20000 else 0)) }},- Ft</span>
+            </div>
+            <div style="font-size: .8rem; margin-top: 32px;">
+                <input type="checkbox" id="tos">
+                <label for="tos" style="user-select: none; -moz-user-select: none;">Elfogadtam és elolvastam az <a href="/docs/aszf" target="_blank" rel="noreferrer noopener">ÁSZF-ben</a> leírtakat.</label>
+                <button type="button" style="display: block; width: 100%; margin-top: 20px;" onclick="placeOrder();">Megrendelés</button>
+            </div>
+        </div>
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+    <script>
+        function placeOrder() {
+            if (!document.getElementById('tos').checked) {
+                showNotification('Megrendelés előtt elkell olvasni és elfogadni az ÁSZF-t.', true);
+                return;
+            }
+
+            let order = undefined;
+            try {
+                order = JSON.parse(window.localStorage.getItem('order'));
+
+                if (order === undefined || order === null)
+                    throw new Error("Failed to decode json!");
+            } catch (error) {
+                showNotification('Hiba történt! Újra ki kell tölteni a mezőket, ehhez vissza kell menni az előző oldalra.');
+                return;
+            }
+
+            let params = new URLSearchParams(window.location.search);
+            order.utanvet = params.has('u');
+
+            fetch('/api/place', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json; charset=UTF-8'
+                },
+                body: JSON.stringify(order)
+            })
+                .then(r => {
+                    if (!r.ok)
+                        showNotification('Hiba történt, kérem próbálja meg később.', true);
+                    else
+                        navigate('rendeles_siker');
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        }
+    </script>
+</body>
+
+</html>

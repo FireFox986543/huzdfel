@@ -1,0 +1,39 @@
+<nav>
+    <div class="top">
+        <img src="{{ url_for('static', filename='img/logo_teljes.png') }}" alt="Húzdfel.hu logó." draggable="false" onclick="navigate('/')" style="cursor: pointer;">
+        <div class="flex-g" style="position: relative;">
+            <input type="text" id="search-bar" placeholder="Írjon ide a kereséshez..." style="width: 100%;" value="{{ q if q else '' }}" maxlength="40">
+            <i class="far fa-magnifying-glass"></i>
+        </div>
+        <a href="/bejelentkezes" class="tooltip tooltip-down" tooltip-text="Bejelentkezés"><i class="far fa-user"></i></a>
+        <a href="/kosar" id="cart-icon" class="tooltip tooltip-down" tooltip-text="Kosár" style="--items: {{ get_cart_items() }};"><i class="far fa-cart-shopping"></i></a>
+        <!-- <a href="/kivansaglista" class="tooltip tooltip-down" tooltip-text="Kívánságlista"><i class="far fa-heart"></i></a> -->
+    </div>
+    <div class="bottom">
+        <button style="display: flex; gap: 8px; align-items: center;" onclick="openSideMenu()">
+            <i class="fas fa-tally-3" style="transform: translate(0, 2px) rotate(90deg);"></i>
+            Menü
+        </button>
+        <a href="/" class="{{ 'active' if active_tab == 'kezdolap' }}">KEZDŐLAP</a>
+        <a href="/docs/promociok" class="{{ 'active' if active_tab == 'promociok' }}">PROMÓCIÓINK</a>
+        <a href="/docs/kapcsolat" class="{{ 'active' if active_tab == 'kapcsolat' }}">KAPCSOLAT</a>
+        <a href="/docs/info" class="{{ 'active' if active_tab == 'info' }}">INFORMÁCIÓ</a>
+        <a href="/docs/szolgaltatasok" class="{{ 'active' if active_tab == 'szolgaltatasok' }}">SZOLGÁLTATÁSOK</a>
+        <a href="/docs/karrier" class="{{ 'active' if active_tab == 'karrier' }}">KARRIER</a>
+    </div>
+    <div class="side-menu-blur" onclick="closeSideMenu()"></div>
+    <div class="side-menu">
+        <h2>termék menü</h2>
+        <hr>
+        {% for p, v in menu_paths.items() %}
+        <div class="container">
+            <span>{{ p }}</span>
+            <div class="sub-container">
+                {% for c, u in v.items() %}
+                <a href="/kereses?v=True&c={{ convert_cat(u) }}">{{ c }}</a>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</nav>

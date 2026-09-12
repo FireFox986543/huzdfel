@@ -1,0 +1,49 @@
+{% import 'huzdfel_macros.html' as macros %}
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikeres rendelés – {{ titlename }}</title>
+    {% include 'huzdfel_resources.html' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/kosar.css') }}">
+    <style>
+        h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--text-light);
+            margin: .5rem 0;
+        }
+
+        .card a {
+            display: block;
+            color: var(--primary);
+            text-decoration: underline 1px solid currentColor;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main>
+        <div class="card" style="width: 800px; margin: 20px auto; gap: 0;">
+            <h1>Sikeres rendelés!</h1>
+            <h2>Rendelésedet sikeresen feldolgoztuk! Hamarosan megérkezik a csomagod a megadott címre.</h2>
+            <h2>Csomagod érkezéséről emailben tájékoztatunk.</h2>
+            <a href="/">Vissza a kezdőlapra...</a>
+        </div>
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+{% import 'huzdfel_macros.html' as macros %}
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adatvédelmi tájékoztató – {{ titlename }}</title>
+    {% include 'huzdfel_resources.html' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/docs.css') }}">
+</head>
+
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main>
+        <h1>Adatvédelmi tájékoztató</h1>
+
+        <p>Jelen adatvédelmi tájékoztató célja, hogy a Húzdfel.hu Webshop (továbbiakban: „Szolgáltató”) bemutassa, hogyan kezeli a vásárlók és látogatók személyes adatait a www.huzdfel.hu weboldalon keresztül történő vásárlás és böngészés során.</p>
+
+        <h2>1. Az adatkezelő adatai</h2>
+        <ul>
+            <li><strong>Név:</strong> Húzdfel Zrt.</li>
+            <li><strong>Székhely:</strong> 1054 Budapest, Virág utca 11.</li>
+            <li><strong>Cégjegyzékszám:</strong> 21-01-563321</li>
+            <li><strong>Adószám:</strong> 15378925-2-41</li>
+            <li><strong>E-mail:</strong> <a href="mailto:info@huzdfel.hu">info@huzdfel.hu</a></li>
+            <li><strong>Telefon:</strong> +36 30 450 3333</li>
+        </ul>
+
+        <h2>2. Az adatkezelés célja</h2>
+        <p>A Szolgáltató az ügyfelek személyes adatait kizárólag az alábbi célok érdekében kezeli:</p>
+        <ol>
+            <li>Vásárlások lebonyolítása és megrendelések teljesítése</li>
+            <li>Számlázás és könyvelési kötelezettségek teljesítése</li>
+            <li>Ügyfélszolgálati kapcsolattartás</li>
+            <li>Marketing kommunikáció és hírlevél küldése (hozzájárulás esetén)</li>
+            <li>Weboldal működésének elemzése és fejlesztése</li>
+        </ol>
+
+        <h2>3. Kezelt adatok köre</h2>
+        <p>A Szolgáltató az alábbi személyes adatokat kezeli:</p>
+        <ul>
+            <li>Név</li>
+            <li>Szállítási és számlázási cím</li>
+            <li>E-mail cím</li>
+            <li>Telefonszám</li>
+            <li>Rendelés adatai (rendelt termékek, fizetési mód, összeg, bankkártya adatai)</li>
+            <li>Regisztráció esetén felhasználónév és jelszó (nem titkosított formában)</li>
+        </ul>
+
+        <h2>4. Az adatkezelés jogalapja</h2>
+        <p>Az adatkezelés jogalapja a GDPR 6. cikk (1) bekezdése alapján történik:</p>
+        <ul>
+            <li><strong>(b)</strong> szerződés teljesítése – vásárlások, megrendelések kezelése</li>
+            <li><strong>(c)</strong> jogi kötelezettség teljesítése – számlázási, adózási kötelezettségek</li>
+            <li><strong>(a)</strong> érintett hozzájárulása – hírlevél feliratkozás esetén</li>
+        </ul>
+
+        <h2>5. Adattovábbítás és adatfeldolgozók</h2>
+        <p>A Szolgáltató kizárólag az alábbi partnereknek továbbít adatokat, a szükséges mértékben:</p>
+        <ul>
+            <li>Futárszolgálatok (GLS, FoxPost) – szállítás céljából</li>
+            <li>Könyvelő partner – számlázási adatok kezelése</li>
+            <li>IT szolgáltató – tárhely és rendszerkarbantartás</li>
+        </ul>
+
+        <h2>6. Adatmegőrzési időtartam</h2>
+        <p>A személyes adatokat az alábbi ideig őrizzük meg:</p>
+        <ul>
+            <li>Vásárlási adatok: 8 év (számlázási jogszabály szerint)</li>
+            <li>Felhasználói fiók adatai: a regisztráció törléséig</li>
+            <li>Marketing adatok: a hozzájárulás visszavonásáig</li>
+        </ul>
+
+        <h2>7. Az érintettek jogai</h2>
+        <p>Az érintettek az alábbi jogokkal élhetnek:</p>
+        <ul>
+            <li>Hozzáférés a kezelt adatokhoz</li>
+            <li>Adatok helyesbítése</li>
+            <li>Adatok törlése („elfeledtetés joga”)</li>
+            <li>Adatkezelés korlátozása</li>
+            <li>Adathordozhatóság</li>
+            <li>Tiltakozás az adatkezelés ellen</li>
+        </ul>
+
+        <p>Kérelmét az <a href="mailto:privacy@huzdfel.hu">privacy@huzdfel.hu</a> címre küldheti el.</p>
+
+        <h2>8. Panasztétel joga</h2>
+        <p>Amennyiben úgy véli, hogy adataival kapcsolatban jogsértés történt, az alábbi hatósághoz fordulhat:</p>
+        <ul>
+            <li><strong>Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH)</strong></li>
+            <li>Cím: 1055 Budapest, Falk Miksa utca 9–11.</li>
+            <li>Web: <a href="https://www.naih.hu" target="_blank" rel="noreferrer noopener">www.naih.hu</a></li>
+        </ul>
+
+        <h2>9. Cookie-k kezelése</h2>
+        <p>A weboldal cookie-kat használ a felhasználói élmény javítása, a kosár működése és a statisztikai elemzések céljából. A cookie-k használatáról részletesen az <a href="/docs/cookie">Cookie tájékoztatóban</a> olvashat.</p>
+
+        <h2>10. Az adatvédelmi tájékoztató módosítása</h2>
+        <p>A Szolgáltató fenntartja a jogot, hogy jelen tájékoztatót bármikor módosítsa. A változásokat a weboldalon tesszük közzé. Az aktuális verzió hatályba lépésének dátuma: <strong>2025. október 26.</strong></p>
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+</body>
+
+</html>

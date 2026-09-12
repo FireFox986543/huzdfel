@@ -1,0 +1,22 @@
+{% import 'huzdfel_macros.html' as macros %}
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404! Nem található – {{ titlename }}</title>
+    {% include 'huzdfel_resources.html' %}
+</head>
+
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main style="text-align: center;">
+        <h1 style="color: var(--primary); font-size: 7rem;">404!</h1>
+        <p style="color: var(--text-lighter); font-size: 1rem;">Nem található a weboldal amit beírt. Ellenőrízze, hogy helyesen írta-e be?</p>
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+</body>
+
+</html>

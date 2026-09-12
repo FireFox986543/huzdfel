@@ -1,0 +1,7 @@
+{% macro render_quantity(id, value) %}
+<div class="quantity-container">
+    <button onclick="quantityDecrement(this)" data-relation="{{ id }}"><i class="fas fa-dash"></i></button>
+    <input type="number" id="quantity-txt_{{ id }}" value="{{ value }}" min="1" max="20" oninput="quantityInputted(this)" title="1 és 20 közötti szám.">
+    <button onclick="quantityIncrement(this)" data-relation="{{ id }}"><i class="fas fa-plus"></i></button>
+</div>
+{% endmacro %}

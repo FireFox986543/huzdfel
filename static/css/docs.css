@@ -1,0 +1,132 @@
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 32px;
+}
+
+a:link,
+a:visited {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: var(--highlight);
+    text-decoration: underline 1px solid currentColor;
+}
+
+.card span {
+    display: block;
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+ul, ol {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 40%;
+
+    img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        user-select: none;
+        -moz-user-select: none;
+        border-radius: 8px;
+    }
+}
+
+p {
+    margin-top: 0;
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    justify-content: space-between;
+    margin: 32px 0;
+
+    img {
+        display: block;
+        width: 32%;
+        height: auto;
+        border-radius: 12px;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+    background: white;
+    border-radius: 12px;
+
+    .top {
+        display: flex;
+        height: 400px;
+
+        .left, .map {
+            flex: 50%;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+
+            span {
+                color: var(--primary);
+                font-size: 3rem;
+                margin: 32px 0;
+                font-weight: bold;
+                text-transform: uppercase;
+                align-self: center;
+            }
+
+            ul {
+                padding-left: 40px;
+            }
+        }
+    }
+
+    img {
+            display: block;
+            width: 60%;
+            height: auto;
+            border-radius: 12px;
+            margin: 20px auto 0;
+        }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+}

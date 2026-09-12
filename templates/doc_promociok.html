@@ -1,0 +1,79 @@
+{% import 'huzdfel_macros.html' as macros %}
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promócióink – {{ titlename }}</title>
+    {% set active_tab = 'promociok' %}
+    {% include 'huzdfel_resources.html' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/docs.css') }}">
+</head>
+
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main>
+        <h1>Promócióink</h1>
+        <p>Fedezd fel aktuális kedvezményeinket és exkluzív ajánlatainkat! Webshopunkban rendszeresen indítunk akciókat, hogy kedvenc darabjaidat még kedvezőbb áron szerezhesd be.</p>
+
+        <div class="gallery">
+            <img src="{{ url_for('static', filename='img/carousel/1.png') }}" alt="" draggable="false">
+            <img src="{{ url_for('static', filename='img/carousel/2.png') }}" alt="" draggable="false">
+            <img src="{{ url_for('static', filename='img/carousel/3.png') }}" alt="" draggable="false">
+        </div>
+
+        <h2>🔹 Aktuális akciók</h2>
+        <ul>
+            <li><strong>Téli leárazás – akár 40% kedvezmény!</strong><br>
+                Válogass kabátokból, pulóverekből és cipőkből az őszi kollekcióból kedvezményes áron. Az akció <strong>december 20-ig</strong> érvényes.</li>
+
+            <li><strong><q>Készülj fel a karácsonyra a HúzdFel.HU-val!</q></strong><br>
+                Vásárolj akciós áron ajándékokat a szeretteidnek. Pólók, pulóverek, kabátok, sálak. Akár 60% kedvezmény. Az akció <strong>december 20-ig</strong> érvényes.</li>
+
+            <li><strong>Ingyenes szállítás 20 000 Ft felett</strong><br>
+                Nincs szállítási díj, ha rendelésed meghaladja a 20 000 Ft-ot – bármely termékre, bármely kategóriából.</li>
+        </ul>
+
+        <h2>🎁 Klubtagsági előnyök</h2>
+        <p>Regisztrált vásárlóink számára extra kedvezményeket és elővásárlási lehetőségeket biztosítunk:</p>
+        <ul>
+            <li>Elsőként értesülhetsz új kollekcióinkról</li>
+            <li>Születésnapi 10% kedvezmény</li>
+            <li>Különleges kuponok hűséges vásárlóinknak</li>
+        </ul>
+
+        <h2>💌 Iratkozz fel hírlevelünkre!</h2>
+        <p>Ne maradj le jövőbeli promócióinkról és exkluzív ajánlatainkról – iratkozz fel hírlevelünkre, és kapsz egy <strong>10% kedvezményt</strong> az első rendelésedre.</p>
+
+        <div class="card" style="width: 600px; padding-bottom: 20px; padding-top: 0; margin-bottom: 20px;">
+            <form action="/" method="post" style="width: 100%;">
+                <div class="form-row">
+                    <div class="field" style="position: relative;">
+                        <label for="email">E-mail címed:</label><br>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </div>
+                </div>
+                <input type="submit" value="Feliratkozom">
+            </form>
+        </div>
+
+        <h2>ℹ️ Fontos tudnivalók</h2>
+        <p>Az akciók más kedvezményekkel nem vonhatók össze, és a készlet erejéig érvényesek. Az aktuális promóciók részleteit az egyes termékoldalakon találod.</p>
+
+        <h2>Kapcsolat</h2>
+        <p>Kérdésed van valamelyik promócióval kapcsolatban? Fordulj ügyfélszolgálatunkhoz:</p>
+        <p>
+            <address>
+                E-mail: <a href="mailto:ugyfelszolgalat@huzdfel.hu">ugyfelszolgalat@huzdfel.hu</a><br>
+                Telefonszám: +36 30 450 3333
+            </address>
+        </p>
+
+        <p><strong>Frissítve:</strong> 2025. október 26.</p>
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+</body>
+
+</html>

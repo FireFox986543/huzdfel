@@ -1,0 +1,22 @@
+a {
+    color: var(--primary);
+}
+
+.eye-button {
+    position: absolute;
+    inset: 27px 6px 6px auto;
+    aspect-ratio: 1 / 1;
+    color: var(--primary);
+    padding: 0;
+    background: unset;
+    z-index: 20;
+}
+
+.eye-button:hover {
+    background: unset;
+    color: var(--highlight);
+}
+
+.eye-button+input {
+    padding-right: 40px;
+}

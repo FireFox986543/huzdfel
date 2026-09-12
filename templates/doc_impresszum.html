@@ -1,0 +1,63 @@
+{% import 'huzdfel_macros.html' as macros %}
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impresszum – {{ titlename }}</title>
+    {% include 'huzdfel_resources.html' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/docs.css') }}">
+</head>
+
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main>
+        <h1>Impresszum</h1>
+
+        <p>Az alábbi impresszum a <a href="https://www.huzdfel.hu">www.huzdfel.hu</a> weboldalra és annak üzemeltetőjére vonatkozik. A weboldal használatával a látogató elfogadja az alábbi feltételeket.</p>
+
+        <h2>1. Üzemeltető adatai</h2>
+        <ul>
+            <li><strong>Cégnév:</strong> Húzdfel.hu Zártkörűen működő részvénytársaság</li>
+            <li><strong>Székhely:</strong> 1054 Budapest, Virág utca 11.</li>
+            <li><strong>Levelezési cím:</strong> 1054 Budapest, Virág utca 11.</li>
+            <li><strong>Cégjegyzékszám:</strong> 21-01-563321</li>
+            <li><strong>Adószám:</strong> 15378925-2-41</li>
+            <li><strong>Nyilvántartó bíróság:</strong> Fővárosi Törvényszék Cégbírósága</li>
+            <li><strong>Képviselő:</strong> Androsshy Miklós Péter ügyvezető</li>
+            <li><strong>E-mail:</strong> <a href="mailto:info@huzdfel.hu">info@huzdfel.hu</a></li>
+            <li><strong>Telefon:</strong> +36 30 450 3333</li>
+        </ul>
+
+        <h2>2. Szolgáltatás jellege</h2>
+        <p>A Húzdfel.hu Webshop online ruházati és divatkiegészítő termékeket értékesít magánszemélyek részére Magyarországon belül. A weboldalon elérhető áruk és szolgáltatások megrendelése elektronikus úton történik.</p>
+
+        <h2>3. Ügyfélszolgálat</h2>
+        <ul>
+            <li><strong>E-mail:</strong> <a href="mailto:ugyfelszolgalat@huzdfel.hu">ugyfelszolgalat@huzdfel.hu</a></li>
+            <li><strong>Telefon:</strong> +36 30 450 3333</li>
+            <li><strong>Ügyfélfogadási idő:</strong> Hétfő–Péntek: 9:00 – 17:00</li>
+        </ul>
+
+        <h2>4. Szerzői jogi nyilatkozat</h2>
+        <p>A <a href="/">www.huzdfel.hu</a> weboldal teljes tartalma – beleértve a szövegeket, képeket, grafikákat, logókat, arculati elemeket – a Húzdfel.hu Zrt. szellemi tulajdonát képezi. A tartalmak bármilyen formában történő felhasználása kizárólag a Szolgáltató előzetes, írásos engedélyével lehetséges.</p>
+
+        <h2>5. Felelősség kizárása</h2>
+        <p>A Szolgáltató mindent megtesz a weboldalon szereplő információk pontosságáért, de nem vállal felelősséget a megjelenített adatok, árak vagy készletinformációk esetleges hibáiért. A Húzdfel.hu Zrt. fenntartja a jogot, hogy a weboldal tartalmát előzetes értesítés nélkül bármikor módosítsa.</p>
+
+        <h2>6. Kapcsolódó dokumentumok</h2>
+        <ul>
+            <li><a href="/docs/adatvedelem">Adatvédelmi tájékoztató</a></li>
+            <li><a href="/docs/cookie">Cookie (Süti) tájékoztató</a></li>
+            <li><a href="/docs/aszf">Általános Szerződési Feltételek (ÁSZF)</a></li>
+        </ul>
+
+        <h2>7. Hatály</h2>
+        <p>Jelen impresszum 2025. október 26. napjától érvényes, és visszavonásig hatályos.</p>
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+</body>
+
+</html>

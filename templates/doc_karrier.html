@@ -1,0 +1,119 @@
+{% import 'huzdfel_macros.html' as macros %}
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karrier – {{ titlename }}</title>
+    {% set active_tab = 'karrier' %}
+    {% include 'huzdfel_resources.html' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/docs.css') }}">
+</head>
+
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main>
+        <h1>Álláshírdetések</h1>
+
+        <p>Csatlakozz csapatunkhoz, és légy része egy dinamikusan fejlődő online divatmárkának! Folyamatosan keressük azokat a lelkes, kreatív és elhivatott munkatársakat, akik szeretnének részt venni a divat jövőjének alakításában. Nézd meg aktuális állásajánlatainkat, és találd meg a hozzád illő pozíciót – nálunk minden tehetségnek helye van!</p>
+
+        <div>
+            <h3 style="margin-bottom: 8px;">Jelentkezés</h3>
+            <p style="margin-top: 0;">
+                Küldd el önéletrajzodat és rövid motivációs leveledet a <strong>karrier@huzdfel.hu</strong> címre!
+                <br>Kérjük, a tárgy mezőben tüntesd fel a pozíció nevét (pl. „Social Media Manager – jelentkezés”).
+            </p>
+        </div>
+
+        <div class="card">
+            <div>
+                <span>Ügyfélszolgálati munkatárs</span>
+                <h2>Feladatok:</h2>
+                <ul>
+                    <li>Vásárlói kérdések megválaszolása e-mailben és chaten</li>
+                    <li>Rendelések, cserék, visszaküldések kezelése</li>
+                    <li>Kapcsolattartás a raktárral és a futárszolgálattal</li>
+                </ul>
+                <h2>Elvárások:</h2>
+                <ul>
+                    <li>Kiváló kommunikációs készség írásban és szóban</li>
+                    <li>Precizitás, empátia, problémamegoldó hozzáállás</li>
+                    <li>Alapvető számítógépes ismeretek, gyors gépelés</li>
+                </ul>
+                <h2>Amit kínálunk:</h2>
+                <ul>
+                    <li>Fiatalos, támogató csapat</li>
+                    <li>Stabil, hosszú távú munkalehetőség</li>
+                    <li>Dolgozói kedvezmény webshopunkban</li>
+                    <li>Részben home office lehetőség</li>
+                </ul>
+                <p><strong>Jelentkezési határidő: 2026. január 31.</strong></p>
+            </div>
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='img/ugyfelszolgalat.jpg') }}" alt="Ügyfélszolgálati munkatárs" draggable="false">
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span>Raktári munkatárs (divatáru-logisztika)</span>
+                <h2>Feladatok:</h2>
+                <ul>
+                    <li>Megrendelések összekészítése, csomagolása</li>
+                    <li>Termékek beérkeztetése és raktározása</li>
+                    <li>Készletellenőrzés és leltározás</li>
+                </ul>
+                <h2>Elvárások:</h2>
+                <ul>
+                    <li>Pontosság, megbízhatóság, jó fizikai állóképesség</li>
+                    <li>Csapatmunka és rugalmasság</li>
+                    <li>Tapasztalat raktári munkában előny, de nem feltétel</li>
+                </ul>
+                <h2>Amit kínálunk:</h2>
+                <ul>
+                    <li>Kényelmes munkakörnyezet, modern raktár</li>
+                    <li>Teljes munkaidős bejelentett állás</li>
+                    <li>Béren kívüli juttatások</li>
+                    <li>Dolgozói kedvezmények</li>
+                </ul>
+                <p><strong>Jelentkezési határidő: Folyamatos</strong></p>
+            </div>
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='img/raktaros.png') }}" alt="Raktári munkatárs" draggable="false">
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span>Social Media & Content Manager</span>
+                <h2>Feladatok:</h2>
+                <ul>
+                    <li>Márkánk online jelenlétének fejlesztése (Instagram, TikTok, Facebook)</li>
+                    <li>Tartalomgyártás: fotók, videók, szövegek, kampányok</li>
+                    <li>Közösségépítés és együttműködés influenszerekkel</li>
+                </ul>
+                <h2>Elvárások:</h2>
+                <ul>
+                    <li>Erős vizuális érzék és kreativitás</li>
+                    <li>Tapasztalat közösségi média kezelésében</li>
+                    <li>Jó íráskészség és trendérzékenység</li>
+                    <li>Előny: Photoshop / Canva / CapCut ismeret</li>
+                </ul>
+                <h2>Amit kínálunk:</h2>
+                <ul>
+                    <li>Szabad, inspiráló munkakörnyezet</li>
+                    <li>Saját ötleteid megvalósításának lehetősége</li>
+                    <li>Rugalmas munkaidő, akár távmunkában is</li>
+                    <li>Részvétel fotózásokon, kampányokban</li>
+                </ul>
+                <p><strong>Jelentkezési határidő: 2025. december 15.</strong></p>
+            </div>
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='img/marketing.webp') }}" alt="Social Media & Content Manager" draggable="false">
+            </div>
+        </div>
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+</body>
+
+</html>

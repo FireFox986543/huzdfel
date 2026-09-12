@@ -1,0 +1,75 @@
+{% import 'huzdfel_macros.html' as macros %}
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie (süti) tájékoztató – {{ titlename }}</title>
+    {% include 'huzdfel_resources.html' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/docs.css') }}">
+</head>
+
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main>
+        <h1>Cookie (Süti) Tájékoztató</h1>
+
+        <p>A Húzdfel.hu Zrt. (továbbiakban: „Szolgáltató”, „Húzdfel.hu Webshop”) a www.huzdfel.hu weboldalon sütiket (cookie-kat) használ a felhasználói élmény javítása, a weboldal működésének biztosítása, valamint statisztikai és marketing célok érdekében. Jelen tájékoztató ismerteti, hogy mik azok a sütik, milyen típusokat használunk, és hogyan tudja azokat kezelni.</p>
+
+        <h2>1. Mik azok a cookie-k?</h2>
+        <p>A cookie-k kis adatfájlok, amelyeket a weboldal a felhasználó eszközén (számítógép, telefon, tablet) helyez el, amikor az a weboldalt meglátogatja. A cookie-k segítségével a weboldal felismeri a felhasználót, megjegyzi beállításait, és segít a szolgáltatás személyre szabásában.</p>
+
+        <h2>2. A cookie-k típusai</h2>
+        <h3>2.1. Működéshez szükséges sütik</h3>
+        <p>Ezek a sütik elengedhetetlenek a weboldal megfelelő működéséhez, például a kosár vagy a bejelentkezési funkció használatához. Ezek nélkül a weboldal egyes részei nem működhetnek megfelelően.</p>
+
+        <h3>2.2. Teljesítményt biztosító és analitikai sütik</h3>
+        <p>Ezek a sütik információt gyűjtenek arról, hogyan használják a látogatók a weboldalt (például melyik oldalt tekintik meg leggyakrabban). A gyűjtött adatok anonim módon segítik a weboldal fejlesztését és optimalizálását.</p>
+
+        <h3>2.3. Funkcionális sütik</h3>
+        <p>Ezek a sütik lehetővé teszik, hogy a weboldal megjegyezze a felhasználó választásait (például nyelv, régió, bejelentkezési adatok), így kényelmesebb és személyre szabottabb élményt biztosítanak.</p>
+
+        <h3>2.4. Marketing sütik</h3>
+        <p>A marketing sütik célja, hogy releváns hirdetéseket jelenítsenek meg a felhasználónak, illetve mérjék a hirdetési kampányok hatékonyságát. Ezeket általában harmadik fél szolgáltatók helyezik el (pl. Google, Facebook).</p>
+
+        <h2>3. Alkalmazott cookie-k listája</h2>
+        <p>Az alábbiakban bemutatunk néhány példát az általunk használt cookie-kra:</p>
+        <ul>
+            <li><strong>session_id</strong> – munkamenet azonosító, amely a kosár működéséhez szükséges (lejárat: böngészés végén)</li>
+            <li><strong>cookie_consent</strong> – a sütihozzájárulás tárolása (lejárat: 1 év)</li>
+            <li><strong>_ga</strong> – Google Analytics azonosító a látogatottsági statisztikákhoz (lejárat: 2 év)</li>
+            <li><strong>_fbp</strong> – Facebook pixel azonosító marketing célokra (lejárat: 3 hónap)</li>
+        </ul>
+
+        <h2>4. Harmadik fél által elhelyezett sütik</h2>
+        <p>Weboldalunkon harmadik fél szolgáltatói sütik is működhetnek, például:</p>
+        <ul>
+            <li>Google Analytics – weboldal forgalom elemzésére</li>
+            <li>Facebook Pixel – hirdetések hatékonyságának mérésére</li>
+            <li>Google Ads – személyre szabott hirdetések megjelenítésére</li>
+        </ul>
+
+        <h2>5. A cookie-k kezelése és törlése</h2>
+        <p>A felhasználó bármikor dönthet arról, hogy engedélyezi vagy letiltja a sütiket. A legtöbb böngésző alapértelmezetten elfogadja a cookie-kat, de ez a beállítás módosítható.</p>
+
+        <p>A cookie-beállítások módosításának módja böngészőnként eltérő. Az alábbi linkeken talál útmutatót a leggyakrabban használt böngészőkhöz:</p>
+        <ul>
+            <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noreferrer noopener">Google Chrome</a></li>
+            <li><a href="https://support.mozilla.org/hu/kb/sutik-torlese" target="_blank" rel="noreferrer noopener">Mozilla Firefox</a></li>
+            <li><a href="https://support.microsoft.com/hu-hu/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank" rel="noreferrer noopener">Internet Explorer / Edge</a></li>
+            <li><a href="https://support.apple.com/hu-hu/guide/safari/sfri11471/mac" target="_blank" rel="noreferrer noopener">Safari</a></li>
+        </ul>
+
+        <h2>6. Hozzájárulás a sütik használatához</h2>
+        <p>Amikor először látogat el weboldalunkra, egy felugró ablakban lehetősége van elfogadni vagy elutasítani a nem kötelező sütik használatát. A döntése később is módosítható a <a href="/cookie-beallitasok.html">Cookie beállítások</a> oldalon.</p>
+
+        <h2>7. A cookie tájékoztató módosítása</h2>
+        <p>A Szolgáltató fenntartja a jogot a jelen cookie tájékoztató bármikori módosítására. A változásokat a weboldalon tesszük közzé, az aktuális verzió hatályba lépésének dátuma: <strong>2025. október 26.</strong></p>
+
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+</body>
+
+</html>

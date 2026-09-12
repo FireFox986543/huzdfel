@@ -1,0 +1,1496 @@
+[
+    {
+        "name": "Alane Reiyd™",
+        "products": [
+            {
+                "type": "karora",
+                "price": 6894,
+                "keywords": "ferfi fem kar ora kez kiegeszito",
+                "name": "Férfi fém karóra",
+                "id": "ecfb6aac-80ea-468f-b860-8032d71ec715",
+                "rating": 7,
+                "reviews": 6,
+                "description": "Ez nem csak egy óra, hanem egy időgép, ami visszarepít az 1990-es évek vállalati bulijába. Nehéz, mint egy jó döntés a hétfő reggeli meeting alatt, és olyan fényes, hogy még a nap is elpirul tőle. Egy igazi férfi így mutatja meg, hogy az idő nem csak pénz, hanem vaskos fémdarab is.",
+                "variants": [
+                    {
+                        "name": "ezüst",
+                        "color": "gray",
+                        "path": "ar-ko-ezu",
+                        "priceOverride": 4995
+                    },
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "ar-ko-fek"
+                    },
+                    {
+                        "name": "piros",
+                        "color": "red",
+                        "path": "ar-ko-pir"
+                    }
+                ]
+            },
+            {
+                "type": "karora",
+                "price": 13899,
+                "keywords": "noi kar ora kez kiegeszito",
+                "name": "Női divatos karóra",
+                "id": "3854521b-8ff4-45d9-9743-f6ac164c2118",
+                "rating": 7,
+                "reviews": 3,
+                "description": "Mert mi más mutatná jobban, hogy 'igen, tudom, hogy késésben vagyok', mint egy tökéletesen időzített divatos karóra!",
+                "variants": [
+                    {
+                        "name": "bézs",
+                        "color": "beige",
+                        "path": "ar-kar2-bez"
+                    },
+                    {
+                        "name": "rózsaszín",
+                        "color": "pink",
+                        "path": "ar-kar2-roz"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Shrieker",
+        "products": [
+            {
+                "type": "cipo",
+                "price": 25679,
+                "keywords": "ferfi cipo sport",
+                "name": "Férfi kényelmes sportcipő",
+                "id": "01ddd778-2c32-4857-a225-2b647528043b",
+                "rating": 9,
+                "reviews": 9,
+                "description": "Tökéletes társ a mozgalmas napokra – ez a sportcipő kényelmet és támogatást nyújt minden lépésnél. Ideális választás aktív hétköznapokra vagy könnyed edzésekhez.",
+                "variants": [
+                    {
+                        "name": "barna",
+                        "color": "brown",
+                        "path": "bc-ci-bar"
+                    },
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "bc-ci-kek"
+                    },
+                    {
+                        "name": "rózsaszín",
+                        "color": "pink",
+                        "path": "bc-ci-roz"
+                    }
+                ]
+            },
+            {
+                "type": "cipo",
+                "price": 14499,
+                "keywords": "cipo ferfi tornacipo edzocipo sport",
+                "name": "Férfi tornacipő",
+                "id": "b149deb4-1df2-463d-9898-f9a4a1a81052",
+                "rating": 6,
+                "reviews": 3,
+                "description": "Stílusos klasszikus modern köntösben. Ez a tornacipő remekül kombinálja a kényelmet és a laza megjelenést – utcára, iskolába vagy szabadidőhöz.",
+                "variants": [
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "bc-ci-tor"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Digital Wasteland®",
+        "products": [
+            {
+                "type": "karora",
+                "price": 18295,
+                "keywords": "noi kar ora kez kiegeszito",
+                "name": "Női karóra",
+                "id": "6ff5d081-432d-4607-9968-00bb313f1223",
+                "rating": 8,
+                "reviews": 12,
+                "description": "Kicsi, elegáns, és tökéletes arra, hogy elterelje a figyelmet arról, hogy az idő néha csak illúzió — különösen, ha már megint elkésel. Inkább ékszer, mint óra, mert egy nőnél az idő nem mérhető percekben, hanem a stílusban. Plusz, mindig mutat valami szikrázó dolgot, hogy ne csak a szíve ragyogjon.",
+                "variants": [
+                    {
+                        "name": "bézs",
+                        "color": "beige",
+                        "path": "dw-ko-bez"
+                    },
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "dw-ko-fek"
+                    },
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "dw-ko-kek"
+                    },
+                    {
+                        "name": "rózsaszín",
+                        "color": "pink",
+                        "path": "dw-ko-roz"
+                    }
+                ]
+            },
+            {
+                "type": "karora",
+                "price": 8799,
+                "keywords": "noi fem kar ora kez kiegeszito",
+                "name": "Női fém karóra",
+                "id": "11451b29-ea72-47bc-92dc-5a39e182ea12",
+                "rating": 10,
+                "reviews": 2,
+                "description": "Ha már úgyis fém az idegeid, legalább a karodon is legyen valami erősebb, mint egy sima bőrszíj.",
+                "variants": [
+                    {
+                        "name": "arany",
+                        "color": "yellow",
+                        "path": "dw-kar2-ara"
+                    }
+                ]
+            },
+            {
+                "type": "karora",
+                "price": 14899,
+                "keywords": "ferfi kar ora kez kiegeszito",
+                "name": "Férfi karóra",
+                "id": "4aad1660-f42b-471c-b52a-8c92769ad73f",
+                "rating": 8,
+                "reviews": 3,
+                "description": "A férfi karóra nem csak az időt mutatja, hanem azt is, hogy 'tudom, hogy hova megyek', még akkor is, ha épp az utolsó pillanatban találod ki.",
+                "variants": [
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "dw-kar-kek"
+                    },
+                    {
+                        "name": "zöld",
+                        "color": "green",
+                        "path": "dw-kar-zol"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "IDNT Wear™",
+        "products": [
+            {
+                "type": "nadrag",
+                "price": 7599,
+                "keywords": "nadrag noi denim farmer",
+                "name": "Női denim nadrág",
+                "id": "df6e812e-0539-4199-9796-47f02bd313b9",
+                "rating": 5,
+                "reviews": 3,
+                "description": "A klasszikus stílus sosem megy ki a divatból. Ez a női denim nadrág tökéletes választás a hétköznapokra – kényelmes, mégis nőies megjelenést biztosít.",
+                "variants": [
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "idntw-na-fek"
+                    },
+                    {
+                        "name": "bordó",
+                        "color": "red",
+                        "path": "idntw-na-pir"
+                    },
+                    {
+                        "name": "zöld",
+                        "color": "green",
+                        "path": "idntw-na-zol"
+                    }
+                ]
+            },
+            {
+                "type": "zokni",
+                "price": 8994,
+                "keywords": "zokni pamut ferfi",
+                "name": "Férfi pamut zokni",
+                "id": "22ceb892-36a1-49c1-afc4-6839bd771bb2",
+                "rating": 8,
+                "reviews": 2,
+                "description": "Légáteresztő, puha pamutból készült zokni a mindennapi kényelemért. Egyszerű, letisztult stílus, ami jól illik bármilyen cipőhöz és alkalomhoz.",
+                "variants": [
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "idntw-zo-fek"
+                    }
+                ]
+            },
+            {
+                "type": "zokni",
+                "price": 12795,
+                "keywords": "zokni sziv",
+                "name": "Női szívecskés zokni",
+                "id": "b2d67efe-9e58-4999-b978-8773bd610454",
+                "rating": 10,
+                "reviews": 1,
+                "description": "Cuki és kényelmes – ez a szívecskés zokni feldobja a napod! Tökéletes választás, ha szeretnél egy kis vidámságot csempészni az öltözetedbe.",
+                "variants": [
+                    {
+                        "name": "piros",
+                        "color": "red",
+                        "path": "idntw-zo-spi"
+                    },
+                    {
+                        "name": "rózsaszín",
+                        "color": "pink",
+                        "path": "idntw-zo-sro"
+                    }
+                ]
+            },
+            {
+                "type": "pulover",
+                "price": 22997,
+                "keywords": "ferfi pulover pulcsi susu kapucni cipzar",
+                "name": "Férfi kapucnis pulóver cipzárral",
+                "id": "1f10c5ae-1fc0-4028-8a07-118ca3c45019",
+                "rating": 9,
+                "reviews": 4,
+                "description": "Mert a stílus sosem kérdezi meg, hogy mi van a fejünkben, de a cipzár segít, hogy legalább egy kis kontrollt nyerjünk a viselt ruhák felett.",
+                "variants": [
+                    {
+                        "name": "narancssárga",
+                        "color": "orange",
+                        "path": "idntw-pul2-nar"
+                    },
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "idntw-pul2-kek"
+                    },
+                    {
+                        "name": "zöld",
+                        "color": "green",
+                        "path": "idntw-pul2-zol"
+                    }
+                ]
+            },
+            {
+                "type": "pulover",
+                "price": 18449,
+                "keywords": "ferfi pulover pulcsi susu kapucni",
+                "name": "Férfi kapucnis pulóver",
+                "id": "cf923e69-e9cb-42f2-a0e0-7f5e3ab44ecf",
+                "rating": 6,
+                "reviews": 1,
+                "description": "A kapucnis pulóver a férfiak örök dilemmáját oldja meg: el akarom rejteni a hajam, de nem akarom, hogy túl feltűnő legyek.",
+                "variants": [
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "idntw-pul3-fek"
+                    }
+                ]
+            },
+            {
+                "type": "pulover",
+                "price": 19995,
+                "keywords": "ferfi pulover pulcsi susu kapucni cipzar",
+                "name": "Férfi kapucnis pulóver cipzárral",
+                "id": "91def2ae-4f46-4fa5-a389-1f9e31ec264e",
+                "rating": 5,
+                "reviews": 2,
+                "description": "A cipzár mindent elmond: készen állsz arra, hogy a nap bármely pillanata után gyorsan elmenekülj, ha szükséges.",
+                "variants": [
+                    {
+                        "name": "szürke",
+                        "color": "gray",
+                        "path": "idntw-pul-szu"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Ifelinne Sanderson",
+        "products": [
+            {
+                "type": "nadrag",
+                "price": 2299,
+                "keywords": "nadrag olcso hasznalt",
+                "name": "Férfi melegítő",
+                "id": "3b6d0f60-d302-4703-8307-2771aad325de",
+                "rating": 2,
+                "reviews": 1,
+                "description": "Kényelmes, laza fazonú melegítő, amely még mindig hozza a funkcionalitást. Ideális választás otthoni pihenéshez vagy sportoláshoz – a jól bevált darabok kényelmével.",
+                "variants": [
+                    {
+                        "name": "sötét kék",
+                        "color": "blue",
+                        "path": "if-na-fek"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Just WearIt™",
+        "products": [
+            {
+                "type": "polo",
+                "price": 18794,
+                "keywords": "polo ferfi felso pulcsi pulover",
+                "name": "Férfi pamut póló, felső",
+                "id": "66a1ee55-0325-49ad-a13a-2f44e3860d80",
+                "rating": 10,
+                "reviews": 2,
+                "description": "Klasszikus választás a hétköznapokra – természetes pamut anyaga kényelmes viseletet biztosít egész nap. Letisztult megjelenésével könnyen kombinálható bármilyen stílushoz.",
+                "variants": [
+                    {
+                        "name": "sárga",
+                        "color": "yellow",
+                        "path": "jw-po-bar"
+                    },
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "jw-po-fek"
+                    },
+                    {
+                        "name": "rózsaszín",
+                        "color": "pink",
+                        "path": "jw-po-roz"
+                    },
+                    {
+                        "name": "zöld",
+                        "color": "green",
+                        "path": "jw-po-zol"
+                    }
+                ]
+            },
+            {
+                "type": "pulover",
+                "price": 16795,
+                "keywords": "noi pulover pulcsi susu kapucni",
+                "name": "Női kapucnis pulóver",
+                "id": "a48db3d3-1f40-4be5-b824-c3dae90b60cd",
+                "rating": 8,
+                "reviews": 2,
+                "description": "A női kapucnis pulóver, mert néha csak annyi kell, hogy úgy tűnj, mintha az időjárás miatt viselnéd, miközben a valóságban a szívfájdalom vagy a legújabb Netflix sorozat okozza.",
+                "variants": [
+                    {
+                        "name": "fehér",
+                        "color": "white",
+                        "path": "jw-pul2-feh"
+                    },
+                    {
+                        "name": "piros",
+                        "color": "red",
+                        "path": "jw-pul2-pir"
+                    },
+                    {
+                        "name": "rózsaszín",
+                        "color": "pink",
+                        "path": "jw-pul2-roz"
+                    }
+                ]
+            },
+            {
+                "type": "pulover",
+                "price": 17559,
+                "keywords": "ferfi pulover pulcsi susu kapucni cipzar",
+                "name": "Férfi kapucnis pulóver cipzárral",
+                "id": "1115d905-762f-4aed-be41-8c6834b6ce8f",
+                "rating": 10,
+                "reviews": 2,
+                "description": "A férfiak titka: a cipzár, ami egy szempillantás alatt megnyitja a lehetőségeket, és bezárja a napot.",
+                "variants": [
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "jw-pul-kek"
+                    },
+                    {
+                        "name": "szürke",
+                        "color": "gray",
+                        "path": "jw-pul-szu"
+                    },
+                    {
+                        "name": "sötét zöld",
+                        "color": "green",
+                        "path": "jw-pul-zol"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Macna Jenny",
+        "products": [
+            {
+                "type": "nadrag",
+                "price": 24499,
+                "keywords": "nadrag farmer noi denim",
+                "name": "Női farmernadrág",
+                "id": "da6295c0-a14d-4e3a-b4b8-d33627a14f7b",
+                "rating": 8,
+                "reviews": 4,
+                "description": "Időtálló alapdarab, amely minden ruhatárban helyet érdemel. A női farmernadrág sokoldalúan kombinálható, legyen szó lezser hétköznapokról vagy egy stílusosabb összeállításról.",
+                "variants": [
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "mj-na-far"
+                    },
+                    {
+                        "name": "világos kék",
+                        "color": "lblue",
+                        "path": "mj-nad-vfar"
+                    }
+                ]
+            },
+            {
+                "type": "nadrag",
+                "price": 18679,
+                "keywords": "melegito pamut nadrag uni szex",
+                "name": "Uniszex pamut melegítő nadrág",
+                "id": "b189641d-7d41-41d8-9ed7-38f1cb3c0a15",
+                "rating": 7,
+                "reviews": 3,
+                "description": "Lágy tapintású, légáteresztő pamutból készült melegítő, ami bárkinek jól áll. Tökéletes választás edzéshez, otthoni viselethez vagy laza városi sétákhoz.",
+                "variants": [
+                    {
+                        "name": "szürke",
+                        "color": "gray",
+                        "path": "mj-na-mel"
+                    }
+                ]
+            },
+            {
+                "type": "pulover",
+                "price": 19995,
+                "keywords": "noi sport pulover pulcsi cipzar",
+                "name": "Női sport pulóver cipzárral",
+                "id": "0886213e-9cf7-4050-8350-2979e13f7a24",
+                "rating": 4,
+                "reviews": 1,
+                "description": "A női sport pulóver cipzárral, hogy úgy érezd magad, mintha edzés után a világ legnagyobb felfedezője lennél… miközben éppen egy kávét iszol a kanapén.",
+                "variants": [
+                    {
+                        "name": "cseresznye",
+                        "color": "red",
+                        "path": "mj-pul2-cse"
+                    },
+                    {
+                        "name": "rózsaszín",
+                        "color": "pink",
+                        "path": "mj-pul2-roz"
+                    }
+                ]
+            },
+            {
+                "type": "pulover",
+                "price": 14895,
+                "keywords": "noi sport pulover pulcsi cipzar",
+                "name": "Női sport pulóver cipzárral",
+                "id": "f15c85c3-c3cc-4e1c-891d-e81f39ada003",
+                "rating": 0,
+                "reviews": 0,
+                "description": "Mert a sportos kinézet akkor is elengedhetetlen, ha éppen a plázában sétálsz és a sportos életmód csak egy elméleti koncepció számodra.",
+                "variants": [
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "mj-pul3-fek"
+                    }
+                ]
+            },
+            {
+                "type": "pulover",
+                "price": 15499,
+                "keywords": "noi pulover pulcsi susu kapucni",
+                "name": "Női kapucnis pulóver",
+                "id": "1813cb1f-0173-4b4f-8f88-1ac41089f8eb",
+                "rating": 7,
+                "reviews": 3,
+                "description": "A női kapucnis pulóver, mert a hideg szél sem akadályozhat abban, hogy stílusosan elrejtsd a reggeli hajadat.",
+                "variants": [
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "mj-pul4-fek"
+                    }
+                ]
+            },
+            {
+                "type": "pulover",
+                "price": 24594,
+                "keywords": "noi pulover pulcsi susu kapucni",
+                "name": "Női kapucnis pulóver",
+                "id": "a2bf2252-0288-4877-9c08-b49c51fd5548",
+                "rating": 9,
+                "reviews": 3,
+                "description": "Mert a világ legnagyobb kérdése nem az, hogy 'Mi lesz holnap', hanem hogy 'Miért nincs több kapucnis pulóverem?'",
+                "variants": [
+                    {
+                        "name": "bíbór",
+                        "color": "magenta",
+                        "path": "mj-pul-mag"
+                    },
+                    {
+                        "name": "piros",
+                        "color": "red",
+                        "path": "mj-pul-pir"
+                    },
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "mj-pul-kek"
+                    }
+                ]
+            },
+            {
+                "type": "cipo",
+                "price": 15799,
+                "keywords": "noi sport cipo",
+                "name": "Női kényelmes sportcipő",
+                "id": "40ef3dd8-7e01-47bc-89ae-581884a6795d",
+                "rating": 7,
+                "reviews": 3,
+                "description": "Ha a kényelem a legfontosabb, akkor ezek a cipők nem csak a lábadat, hanem a lelki békédet is helyreállítják.",
+                "variants": [
+                    {
+                        "name": "rózsaszín",
+                        "color": "pink",
+                        "path": "mj-cip-roz"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Nine Birch®",
+        "products": [
+            {
+                "type": "polo",
+                "price": 16797,
+                "keywords": "polo ferfi felso pulcsi pulover poli eszter",
+                "name": "Férfi poliészter póló, felső",
+                "id": "dfcb9c90-29e3-4d2d-bd3d-a02e79916a3b",
+                "rating": 4,
+                "reviews": 3,
+                "description": "Könnyű, gyorsan száradó anyag, amely ideális aktív napokra vagy sportoláshoz. Tartós és jól szellőző – a funkcionalitás és stílus találkozása.",
+                "variants": [
+                    {
+                        "name": "fehér",
+                        "color": "white",
+                        "path": "nb-po-feh"
+                    },
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "nb-po-fek"
+                    },
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "nb-po-kek"
+                    },
+                    {
+                        "name": "zöld",
+                        "color": "green",
+                        "path": "nb-po-zol"
+                    }
+                ]
+            },
+            {
+                "type": "pulover",
+                "price": 19249,
+                "keywords": "noi pulover pulcsi susu kapucni cipzar",
+                "name": "Női kapucnis pulóver cipzárral",
+                "id": "cd67ee14-18b7-4438-82ae-f4bf97a471a8",
+                "rating": 7,
+                "reviews": 6,
+                "description": "A cipzár varázsa: biztosítja, hogy ne csak a pulóver, hanem a napod is könnyedén elnyeljen.",
+                "variants": [
+                    {
+                        "name": "bíbór",
+                        "color": "magenta",
+                        "path": "nb-pul-mag"
+                    },
+                    {
+                        "name": "lila",
+                        "color": "purple",
+                        "path": "nb-pul-lil"
+                    },
+                    {
+                        "name": "piros",
+                        "color": "red",
+                        "path": "nb-pul-pir"
+                    }
+                    ,
+                    {
+                        "name": "rózsaszín",
+                        "color": "pink",
+                        "path": "nb-pul-roz"
+                    }
+                ]
+            },
+            {
+                "type": "pulover",
+                "price": 19249,
+                "keywords": "nasa minta pamut pulcsi pulover kapucni susu",
+                "name": "Nasa mintás pamut pulóver kapucnival",
+                "id": "5a1db8d8-8239-4257-8021-92717c0fba1c",
+                "rating": 10,
+                "reviews": 1,
+                "description": "Miért mennél a világűrbe, ha a legnagyobb felfedezést a földön is megteheted egy NASA mintás pulóverben?",
+                "variants": [
+                    {
+                        "name": "fehér",
+                        "color": "white",
+                        "path": "nb-pul-nasa"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Sworn for Colours®",
+        "products": [
+            {
+                "type": "ing",
+                "price": 14990,
+                "keywords": "polo ing ferfi kockas felso",
+                "name": "Férfi kockás ing",
+                "id": "e97c978b-6bb1-4c39-b5e1-0671e271652d",
+                "rating": 8,
+                "reviews": 1,
+                "description": "Időtálló stílus modern kivitelben – ez a kockás ing tökéletes választás hétköznapokra vagy laza alkalmakra. Kényelmes fazon és karakteres mintázat minden férfi ruhatárába illik.",
+                "variants": [
+                    {
+                        "name": "barna",
+                        "color": "brown",
+                        "path": "sfc-in-bar"
+                    },
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "sfc-in-kek"
+                    }
+                ]
+            },
+            {
+                "type": "polo",
+                "price": 19249,
+                "keywords": "nasa minta pamut polo",
+                "name": "Nasa mintás pamut póló",
+                "id": "11377ee5-8b19-4bb7-bb16-291a0f57cc95",
+                "rating": 10,
+                "reviews": 5,
+                "description": "Tudd meg, hogy a világűr is elérhető közelségbe kerülhet, ha megfelelő pólót választasz. A csillagok már várnak.",
+                "variants": [
+                    {
+                        "name": "fehér",
+                        "color": "white",
+                        "path": "sfc-pol-feh"
+                    },
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "sfc-pol-fek"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Wonderful Colors™",
+        "products": [
+            {
+                "type": "cipo",
+                "price": 34899,
+                "keywords": "cipo noi sarku szandal",
+                "name": "Női magas sarkú szandál",
+                "id": "a7637319-5399-4b88-865f-c393259f05e9",
+                "rating": 8,
+                "reviews": 1,
+                "description": "Nőies, elegáns és magabiztos – ez a magas sarkú szandál kiemeli a megjelenésed minden alkalomra. Kifinomult részletei és stabil kialakítása a stílus és kényelem tökéletes egyensúlyát nyújtják.",
+                "variants": [
+                    {
+                        "name": "szürke",
+                        "color": "gray",
+                        "path": "wc-ci-gye"
+                    }
+                ]
+            },
+            {
+                "type": "nadrag",
+                "price": 22999,
+                "keywords": "nadrag farmer noi",
+                "name": "Női denim farmernadrág",
+                "id": "b2dcb13d-f0d3-40e8-a524-5f09f5db5e74",
+                "rating": 9,
+                "reviews": 3,
+                "description": "Modern szabás és klasszikus farmer stílus találkozik ebben a női denim nadrágban. Kényelmes viselet egész napra, amely kiemeli az alakot és magabiztosságot sugall.",
+                "variants": [
+                    {
+                        "name": "fehér",
+                        "color": "white",
+                        "path": "wc-nad-feh"
+                    },
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "wc-nad-fek"
+                    }
+                ]
+            },
+            {
+                "type": "polo",
+                "price": 16295,
+                "keywords": "polo mintas ferfi",
+                "name": "Mintás férfi póló",
+                "id": "214f2eb7-3359-4017-95de-3dd48454ef80",
+                "rating": 9,
+                "reviews": 17,
+                "description": "Egy póló, ami kifejezi a stílusod. Merész vagy játékos mintáival kitűnhetsz a tömegből, miközben kényelmes viselet marad a mindennapokban is.",
+                "variants": [
+                    {
+                        "name": "sötét szürke",
+                        "color": "gray",
+                        "path": "wc-po-fek"
+                    },
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "wc-po-kek"
+                    },
+                    {
+                        "name": "világos kék",
+                        "color": "lblue",
+                        "path": "wc-po-vke"
+                    },
+                    {
+                        "name": "keki zöld",
+                        "color": "green",
+                        "path": "wc-po-zol"
+                    }
+                ]
+            },
+            {
+                "type": "zokni",
+                "price": 8695,
+                "keywords": "zokni mintas noi",
+                "name": "Mintás női zokni",
+                "id": "8108333f-95a0-4f6d-961d-6b8904885be0",
+                "rating": 10,
+                "reviews": 2,
+                "description": "Színes minták, puha anyag és kényelmes viselet – ez a zokni garantáltan kitűnik a tömegből. Ideális választás azoknak, akik nem félnek megmutatni a stílusukat még a legapróbb részletekben sem.",
+                "variants": [
+                    {
+                        "name": "piros",
+                        "color": "red",
+                        "path": "wc-zo-pir"
+                    },
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "wc-zo-fek"
+                    },
+                    {
+                        "name": "sötét zöld",
+                        "color": "green",
+                        "path": "wc-zo-zol"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Worn-Out™",
+        "products": [
+            {
+                "type": "cipo",
+                "price": 44994,
+                "keywords": "cipo bakancs ferfi",
+                "name": "Férfi bakancs",
+                "id": "e5a2c5fc-4c2a-4247-9b6e-c51f77ce134b",
+                "rating": 10,
+                "reviews": 2,
+                "description": "Masszív, időjárásálló és férfias – ez a bakancs minden terepen megállja a helyét. Strapabíró kialakítása és karakteres megjelenése miatt nélkülözhetetlen a hűvösebb napokon.",
+                "variants": [
+                    {
+                        "name": "barna",
+                        "color": "brown",
+                        "path": "wo-ba-bar"
+                    },
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "wo-ba-fek"
+                    },
+                    {
+                        "name": "sötét kék",
+                        "color": "blue",
+                        "path": "wo-ba-kek"
+                    }
+                ]
+            },
+            {
+                "type": "nadrag",
+                "price": 16599,
+                "keywords": "nadrag noi denim farmer",
+                "name": "Női farmernadrág",
+                "id": "a6220d48-914d-4245-b1fe-9632867c2423",
+                "rating": 9,
+                "reviews": 2,
+                "description": "Tökéletes társ a napi harcokhoz: ha szűk, ha bő, a farmer mindig megmondja, hogy 'ma is megoldod'.",
+                "variants": [
+                    {
+                        "name": "fehér",
+                        "color": "white",
+                        "path": "wo-nad-feh"
+                    },
+                    {
+                        "name": "bézs",
+                        "color": "beige",
+                        "path": "wo-nad-bez"
+                    },
+                    {
+                        "name": "lila",
+                        "color": "purple",
+                        "path": "wo-nad-lil"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Outfit Regret™",
+        "products": [
+            {
+                "type": "sal",
+                "price": 7990,
+                "keywords": "sal pamut ferfi",
+                "name": "Férfi pamut sál",
+                "id": "07812193-669f-466a-bc0a-e55191b31f21",
+                "rating": 10,
+                "reviews": 1,
+                "description": "Puha pamut anyagból készült, kellemes tapintású sál a hűvösebb napokra. Egyszerű, mégis stílusos kiegészítő, amely jól kombinálható bármilyen téli öltözettel.",
+                "variants": [
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "or-sa-kek"
+                    },
+                    {
+                        "name": "narancssárga",
+                        "color": "orange",
+                        "path": "or-sa-nar"
+                    }
+                ]
+            },
+            {
+                "type": "sal",
+                "price": 12499,
+                "keywords": "sal pamut ferfi magyar orszag haza kosar labda",
+                "name": "Magyarország szurkolói sál",
+                "id": "3bc4f270-26f1-4001-a0c8-6506e86af8b3",
+                "rating": 10,
+                "reviews": 1,
+                "description": "Mutasd ki, kinek szurkolsz! Ez a sál elengedhetetlen kelléke minden meccsnek – hazafias színek, erős anyag és igazi szurkolói hangulat.",
+                "variants": [
+                    {
+                        "name": "piros",
+                        "color": "red",
+                        "path": "or-sa-mag"
+                    }
+                ]
+            },
+            {
+                "type": "nadrag",
+                "price": 9680,
+                "keywords": "ferfi denim nadrag farmer",
+                "name": "Férfi denim nadrág",
+                "id": "9bb7c236-60c9-4cba-96d8-672c6e779553",
+                "rating": 8,
+                "reviews": 3,
+                "description": "Mert a férfiak is megérdemlik, hogy az örök klasszikus denim világában érezzék magukat úgy, mint egy western hős.",
+                "variants": [
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "or-nad2-fek"
+                    },
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "or-nad2-kek"
+                    }
+                ]
+            },
+            {
+                "type": "nadrag",
+                "price": 6794,
+                "keywords": "ferfi nadrag terep",
+                "name": "Férfi terepmintás nadrág",
+                "id": "300499fb-357c-4621-be3d-6749170e5254",
+                "rating": 6,
+                "reviews": 1,
+                "description": "Mi más mondhatná jobban, hogy 'én is része vagyok a vadon élő állatoknak', mint egy terepmintás nadrág?",
+                "variants": [
+                    {
+                        "name": "terepmintas",
+                        "color": "green",
+                        "path": "or-nad3-ter"
+                    }
+                ]
+            },
+            {
+                "type": "nadrag",
+                "price": 14599,
+                "keywords": "ferfi pamut nadrag",
+                "name": "Férfi pamut nadrág",
+                "id": "9a2e073b-422a-407a-80a0-e4263312bb1f",
+                "rating": 8,
+                "reviews": 3,
+                "description": "Kényelmes, laza, és valahogy mindig pont ott van, amikor szükséged van rá. Mert egy férfi pamut nadrág nem hagy cserben.",
+                "variants": [
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "or-nad-fek"
+                    },
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "or-nad-kek"
+                    },
+                    {
+                        "name": "sötét zöld",
+                        "color": "green",
+                        "path": "or-nad-zol"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Ugly on Purpose®",
+        "products": [
+            {
+                "type": "cipo",
+                "price": 16580,
+                "keywords": "ferfi cipo sport",
+                "name": "Férfi sportcipő",
+                "id": "53390a71-0511-428f-b171-ca0b4e0bc107",
+                "rating": 9,
+                "reviews": 3,
+                "description": "Dinamikus megjelenés, maximális teljesítmény. Ez a sportcipő minden mozdulatot követ, legyen szó edzésről, futásról vagy egy lendületes napról a városban.",
+                "variants": [
+                    {
+                        "name": "sötét kék",
+                        "color": "blue",
+                        "path": "uop-ci-kek"
+                    },
+                    {
+                        "name": "sötét zöld",
+                        "color": "green",
+                        "path": "uop-ci-zol"
+                    }
+                ]
+            },
+            {
+                "type": "kesztyu",
+                "price": 12499,
+                "keywords": "ferfi teli kesztyu",
+                "name": "Férfi téli kesztyű",
+                "id": "12be72c6-34af-423e-bb01-b7d651874ecc",
+                "rating": 7,
+                "reviews": 3,
+                "description": "Meleg, kényelmes és praktikus – ez a kesztyű megvédi a kezed a hidegtől, miközben stílusos maradsz. Alapdarab a téli hónapokra.",
+                "variants": [
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "uop-ke2-kek"
+                    },
+                    {
+                        "name": "zöld",
+                        "color": "green",
+                        "path": "uop-ke2-zol"
+                    }
+                ]
+            },
+            {
+                "type": "kesztyu",
+                "price": 10794,
+                "keywords": "ferfi teli kesztyu",
+                "name": "Férfi téli kesztyű",
+                "id": "48098662-3c6b-4aca-a138-0ae5220c2cb9",
+                "rating": 10,
+                "reviews": 1,
+                "description": "Ez itt A Férfi Téli Kesztyű — az egyetlen ruha, amit a férfi önként felvesz télvíz idején, mert a hideg kormány se viccel. Vastagabb, mint a nagymama paplanja, mégis mindig az az egy ujj hiányzik belőle, amit épp mozgatnál. Fekete, mert az férfias — vagy csak nem tudják más színben gyártani. És persze elveszik minden szezonban, hogy legyen mire fogni a fagyási sérüléseket.",
+                "variants": [
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "uop-ke-fek"
+                    }
+                ]
+            },
+            {
+                "type": "sapka",
+                "price": 10799,
+                "keywords": "ferfi sapka bezbol baseball fules teli terebesi",
+                "name": "Férfi füles baseball sapka",
+                "id": "69f282d0-ba0f-4cfe-95c0-fbec72b2fe80",
+                "rating": 10,
+                "reviews": 1,
+                "description": "A sapka, ami eldöntötte, hogy nem választ a stílus és a meleg fül között — inkább elveszíti mindkettőt. Egyszerre próbál sportos lenni és falusi nagypapa, de végül csak úgy néz ki, mint aki eltévedt egy vintage piac és egy barkácsbolt között. Praktikus: ha a füled fázik, leteszed a büszkeségedet.",
+                "variants": [
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "uop-sa2-fek"
+                    }
+                ]
+            },
+            {
+                "type": "sapka",
+                "price": 14299,
+                "keywords": "ferfi sapka teli",
+                "name": "Férfi sapka",
+                "id": "33577db1-f7ac-40b2-83c7-1631aa4541bc",
+                "rating": 9,
+                "reviews": 2,
+                "description": "Egyszerű, mint a férfi döntéshozatal a boltban: „Ez fekete? Jó lesz.” Nem számít, hogy fazonja miként áll, úgyis az első darab, amit random levett a polcról. Melegít? Talán. De legalább nem hajlandó levenni, még étteremben sem.",
+                "variants": [
+                    {
+                        "name": "narancssárga",
+                        "color": "orange",
+                        "path": "uop-sa3-nar"
+                    },
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "uop-sa3-kek"
+                    }
+                ]
+            },
+            {
+                "type": "sapka",
+                "price": 18399,
+                "keywords": "ferfi sapka bezbol baseball puma",
+                "name": "Férfi baseball sapka",
+                "id": "d233d1d5-9775-4cfe-9536-0b7464d95064",
+                "rating": 1,
+                "reviews": 1,
+                "description": "A mindenre jó, semmire sem való klasszikus: strandolni, esküvőre, temetésre — mindenhova hozza. Az egyetlen fejfedő, amit 35 felett is viselnek, mintha még mindig 19 évesek lennének és Eminem a csúcson lenne. Az elöl lévő logó több történetet tud mesélni, mint a férfi maga.",
+                "variants": [
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "uop-sa-fek"
+                    },
+                    {
+                        "name": "sötét kék",
+                        "color": "blue",
+                        "path": "uop-sa-kek"
+                    },
+                    {
+                        "name": "zöld",
+                        "color": "green",
+                        "path": "uop-sa-zol"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Washed It, I Swear®",
+        "products": [
+            {
+                "type": "kabat",
+                "price": 34595,
+                "keywords": "ferfi teli kabat susu kapucni",
+                "name": "Férfi téli kabát kapucnival",
+                "id": "6a673c9c-efd6-43a0-b8ff-08836642c9ab",
+                "rating": 10,
+                "reviews": 1,
+                "description": "A kabát, amit egyetlen cél vezérel: „ne fázzak meg.” A szabás? Mindegy. A szín? Lehetőleg olyan, amin nem látszik a mustárfolt. Olyan masszív, hogy ha egyszer leveszi, megáll magától a szobában — és ott is marad márciusig.",
+                "variants": [
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "wiis-ka2-fek"
+                    },
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "wiis-ka2-kek"
+                    },
+                    {
+                        "name": "narancssárga",
+                        "color": "orange",
+                        "path": "wiis-ka2-nar"
+                    },
+                    {
+                        "name": "szürke",
+                        "color": "gray",
+                        "path": "wiis-ka2-szu"
+                    },
+                    {
+                        "name": "keki zöld",
+                        "color": "green",
+                        "path": "wiis-ka2-zol"
+                    }
+                ]
+            },
+            {
+                "type": "kabat",
+                "price": 45679,
+                "keywords": "ferfi teli kabat susu kapucni",
+                "name": "Férfi téli kabát kapucnival",
+                "id": "f229c898-1410-46f1-a67c-605e6397364a",
+                "rating": 8,
+                "reviews": 2,
+                "description": "Ez az a kabát, amit a férfi kiválasztott, mert “olcsó volt és sok zsebe van”. A süsü – azaz a műszőrmés kapucni – hivatalosan a dizájn része, gyakorlatilag viszont csak akkor látszik, mikor épp belefúj a szél, vagy ha a kabát felrobban egy szekrényben. Elegáns? Nem. De meleg. Mint a nagypapa garázsa.",
+                "variants": [
+                    {
+                        "name": "narancssárga",
+                        "color": "orange",
+                        "path": "wiis-ka3-nar"
+                    },
+                    {
+                        "name": "sárga",
+                        "color": "yellow",
+                        "path": "wiis-ka3-sar"
+                    }
+                ]
+            },
+            {
+                "type": "kabat",
+                "price": 28597,
+                "keywords": "ferfi teli kabat susu kapucni",
+                "name": "Férfi téli kabát kapucnival",
+                "id": "483e4135-f085-406c-8bb7-45dccfbb9cfb",
+                "rating": 9,
+                "reviews": 3,
+                "description": "Katonai ihletés, mínusz a fegyelem: a kabát masszív, a kapucni meg úgy néz ki, mintha egy albínó mosómedvét nyírtak volna hozzá. A süsü mindig csiklandozza az orrod, de levágni nem mered, mert akkor “már nem lenne meg a stílusa”. Spoiler: így sincs.",
+                "variants": [
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "wiis-ka-fek"
+                    },
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "wiis-ka-kek"
+                    },
+                    {
+                        "name": "narancssárga",
+                        "color": "orange",
+                        "path": "wiis-ka-nar"
+                    },
+                    {
+                        "name": "zöld",
+                        "color": "green",
+                        "path": "wiis-ka-zol"
+                    }
+                ]
+            },
+            {
+                "type": "nadrag",
+                "price": 16499,
+                "keywords": "ferfi denim nadrag farmer",
+                "name": "Férfi denim farmernadrág",
+                "id": "da5d27cd-bdd8-4875-a474-2a4f5ed5dda5",
+                "rating": 9,
+                "reviews": 2,
+                "description": "A férfiak titka: amikor a farmer nem csak ruházat, hanem egy egész életfilozófia, amit a világ nem ért… de neked pont jó.",
+                "variants": [
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "wiis-nad2-kek"
+                    },
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "wiis-nad2-fek"
+                    }
+                ]
+            },
+            {
+                "type": "nadrag",
+                "price": 17899,
+                "keywords": "női denim nadrag farmer",
+                "name": "Női denim farmernadrág",
+                "id": "8c053496-3dca-440f-97c1-207c952d620e",
+                "rating": 10,
+                "reviews": 2,
+                "description": "Mert a női denim farmernadrág mindig tökéletes választás, ha úgy érzed, hogy a világ egyszerűen nem érti meg a stílusodat, de te akkor is tudod, mi a jó.",
+                "variants": [
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "wiis-nad3-kek"
+                    },
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "wiis-nad3-fek"
+                    }
+                ]
+            },
+            {
+                "type": "nadrag",
+                "price": 14299,
+                "keywords": "női denim nadrag",
+                "name": "Női denim nadrág",
+                "id": "953c75c0-8921-4e6b-b1e5-6d80b1541852",
+                "rating": 7,
+                "reviews": 3,
+                "description": "A legjobb megoldás, ha egy pillanatra úgy érzed, hogy túl sokat mondtak neked a nadrágról, de egy jól megválasztott denimben mindent elmondhatsz.",
+                "variants": [
+                    {
+                        "name": "bézs",
+                        "color": "beige",
+                        "path": "wiis-nad-bez"
+                    },
+                    {
+                        "name": "rózsaszín",
+                        "color": "pink",
+                        "path": "wiis-nad-roz"
+                    },
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "wiis-nad-fek"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Big Bros Company",
+        "products": [
+            {
+                "type": "pulover",
+                "price": 18449,
+                "keywords": "ferfi pulover pulcsi susu kapucni",
+                "name": "Férfi kapucnis pulóver",
+                "id": "bef3f79d-9611-40e9-b183-f7ed3865477c",
+                "rating": 8,
+                "reviews": 2,
+                "description": "A férfi kapucnis pulóver a hűvösebb napokra, amikor egy kávé és egy jó nap indítása fontosabb, mint bármi más.",
+                "variants": [
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "bbc-pul-fek"
+                    },
+                    {
+                        "name": "világos kék",
+                        "color": "lblue",
+                        "path": "bbc-pul-kek"
+                    },
+                    {
+                        "name": "sárga",
+                        "color": "yellow",
+                        "path": "bbc-pul-sar"
+                    },
+                    {
+                        "name": "bíbór",
+                        "color": "magenta",
+                        "path": "bbc-pul-mag"
+                    },
+                    {
+                        "name": "zöld",
+                        "color": "green",
+                        "path": "bbc-pul-zol"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Brigitta Divat®",
+        "products": [
+            {
+                "type": "karora",
+                "price": 8997,
+                "keywords": "ferfi kar ora kez kiegeszito",
+                "name": "Férfi karóra",
+                "id": "6f19cd6b-734e-451f-b642-46de7127c36e",
+                "rating": 8,
+                "reviews": 1,
+                "description": "A férfi karóra egy eszköz, hogy minden pillanatot uralj... vagy legalábbis tudd, hogy mikor kell elindulnod a következő találkozóra.",
+                "variants": [
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "bd-kar2-fek"
+                    }
+                ]
+            },
+            {
+                "type": "karora",
+                "price": 7850,
+                "keywords": "noi kar ora kez kiegeszito szilikon szij",
+                "name": "Női karóra szilikon szíjjal",
+                "id": "39d6fcf4-1c82-4598-ab64-08ce832510fc",
+                "rating": 9,
+                "reviews": 2,
+                "description": "A szilikon szíj nem csak kényelmes, hanem azt is üzeni: 'Ne állj meg, mert minden pillanat fontos'… különösen a kávé szünetek között.",
+                "variants": [
+                    {
+                        "name": "piros",
+                        "color": "red",
+                        "path": "bd-kar3-pir"
+                    },
+                    {
+                        "name": "rózsaszín",
+                        "color": "pink",
+                        "path": "bd-kar3-roz"
+                    }
+                ]
+            },
+            {
+                "type": "karora",
+                "price": 7699,
+                "keywords": "ferfi fem kar ora kez kiegeszito",
+                "name": "Férfi fém karóra",
+                "id": "1804619e-933a-4b10-ad31-28461a3e1066",
+                "rating": 6,
+                "reviews": 2,
+                "description": "Mert ha a karodon nem csillog a fém, akkor minek is nézni az órát? Az idő mindenre emlékeztet, de te legalább divatosan fogod viselni.",
+                "variants": [
+                    {
+                        "name": "ezüst",
+                        "color": "gray",
+                        "path": "bd-kar-szu"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Gordon™",
+        "products": [
+            {
+                "type": "cipo",
+                "price": 12340,
+                "keywords": "ferfi cipo sport",
+                "name": "Férfi sportcipő",
+                "id": "e40f3794-6016-4023-ae1e-03732f2ee78e",
+                "rating": 10,
+                "reviews": 2,
+                "description": "A férfi sportcipő, ami a mozgás örömét hozza a lábad alá, még akkor is, ha a legnagyobb sport, amit ma végzel, egy kis séta a kávézóig.",
+                "variants": [
+                    {
+                        "name": "barna",
+                        "color": "brown",
+                        "path": "gh-cip2-bez"
+                    }
+                ]
+            },
+            {
+                "type": "cipo",
+                "price": 14899,
+                "keywords": "ferfi cipo sport",
+                "name": "Férfi sportcipő",
+                "id": "5a819014-7b07-4993-b3fb-c6753f3274f9",
+                "rating": 7,
+                "reviews": 2,
+                "description": "Második esélyt adva a sportvilágnak – ezek a cipők felkészítenek arra, hogy holnap talán tényleg elindulsz az edzőterembe.",
+                "variants": [
+                    {
+                        "name": "narancssárga",
+                        "color": "orange",
+                        "path": "gh-cip3-bar"
+                    },
+                    {
+                        "name": "sárga",
+                        "color": "yellow",
+                        "path": "gh-cip3-sar"
+                    }
+                ]
+            },
+            {
+                "type": "cipo",
+                "price": 13499,
+                "keywords": "ferfi cipo sport legat",
+                "name": "Férfi légáteresztő sportcipő",
+                "id": "abbaf4f8-08b6-41d5-8f98-59269ef922c8",
+                "rating": 9,
+                "reviews": 6,
+                "description": "A légáteresztő sportcipő, hogy a lábad is élvezze a szabadságot, amit a nyári napok adnak, miközben nem pazarolod el a futást… vagy épp a sétát.",
+                "variants": [
+                    {
+                        "name": "fekete",
+                        "color": "black",
+                        "path": "gh-cip-fek"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Skechers",
+        "products": [
+            {
+                "type": "cipo",
+                "price": 24899,
+                "keywords": "noi legat sport cipo",
+                "name": "Női légátersztő sportcipő",
+                "id": "6709c454-5eca-43d0-b03c-cc27b91420f3",
+                "rating": 8,
+                "reviews": 2,
+                "description": "Légáteresztő? Persze, hogy azok, hogy ne csak a lábad, hanem az egész napod szabadon lélegezhessen. Tökéletes választás a mindennapi futásokhoz… a boltig.",
+                "variants": [
+                    {
+                        "name": "kék",
+                        "color": "blue",
+                        "path": "sk-cip-kek"
+                    },
+                    {
+                        "name": "zöld",
+                        "color": "green",
+                        "path": "sk-cip-zol"
+                    },
+                    {
+                        "name": "barna",
+                        "color": "brown",
+                        "path": "sk-cip-bar"
+                    }
+                ]
+            },
+            {
+                "type": "cipo",
+                "price": 18520,
+                "keywords": "noi virag cipo sport",
+                "name": "Női virágos cipő",
+                "id": "bb06ff55-1e98-4851-95d2-bb87423fc4f0",
+                "rating": 7,
+                "reviews": 5,
+                "description": "A virágos cipő minden nyári nap tökéletes kiegészítője, hogy a lábad is megmondja: 'Még akkor is csodás vagyok, ha épp a legkényelmesebb ruhám van rajtam'.",
+                "variants": [
+                    {
+                        "name": "bézs",
+                        "color": "beige",
+                        "path": "sk-cip2-bez"
+                    },
+                    {
+                        "name": "rózsaszín",
+                        "color": "pink",
+                        "path": "sk-cip2-roz"
+                    }
+                ]
+            }
+        ]
+    }
+]
