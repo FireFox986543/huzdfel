@@ -1,0 +1,139 @@
+{
+    "cipo": {
+        "sizes": [
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43"
+        ],
+        "path": [
+            "Lábbelik",
+            "Cipők"
+        ]
+    },
+    "ing": {
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "2XL",
+            "3XL"
+        ],
+        "path": [
+            "Felsőruházat",
+            "Ingek"
+        ]
+    },
+    "kabat": {
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "2XL",
+            "3XL"
+        ],
+        "path": [
+            "Felsőruházat",
+            "Kabátok"
+        ]
+    },
+    "karora": {
+        "sizes": null,
+        "path": [
+            "Kiegészítők",
+            "Karórák"
+        ]
+    },
+    "kesztyu": {
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "2XL"
+        ],
+        "path": [
+            "Ruházati kiegészítők",
+            "Kesztyűk"
+        ]
+    },
+    "nadrag": {
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "2XL",
+            "3XL"
+        ],
+        "path": [
+            "Felsőruházat",
+            "Nadrágok"
+        ]
+    },
+    "polo": {
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "2XL",
+            "3XL"
+        ],
+        "path": [
+            "Felsőruházat",
+            "Pólók"
+        ]
+    },
+    "pulover": {
+        "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "2XL",
+            "3XL"
+        ],
+        "path": [
+            "Felsőruházat",
+            "Pulóverek"
+        ]
+    },
+    "sal": {
+        "sizes": null,
+        "path": [
+            "Ruházati kiegészítők",
+            "Sálak"
+        ]
+    },
+    "sapka": {
+        "sizes": null,
+        "path": [
+            "Ruházati kiegészítők",
+            "Sapkák"
+        ]
+    },
+    "zokni": {
+        "sizes": [
+            "34-36",
+            "37-39",
+            "40-43"
+        ],
+        "path": [
+            "Alsóruházat",
+            "Zoknik"
+        ]
+    }
+}

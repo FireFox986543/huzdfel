@@ -1,0 +1,59 @@
+{% import 'huzdfel_macros.html' as macros %}
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztáció – {{ titlename }}</title>
+    {% include 'huzdfel_resources.html' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bejelentkezes.css') }}">
+</head>
+
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main>
+        <div class="card" style="width: 800px; margin: 20px auto; gap: 0; padding-bottom: 6px;">
+            <h1 style="font-size: 2rem; color: var(--primary); text-align: center;">Regisztáció</h1>
+            <form action="/">
+                <div class="form-row">
+                    <div class="field">
+                        <label for="email">Email cím</label>
+                        <input type="email" id="email" required maxlength="64" autocomplete="email" placeholder="pelda@gmail.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="field" style="position: relative;">
+                        <label for="passw">Jelszó</label>
+                        <button type="button" class="eye-button" onclick="toggleVisibility('passw')"><i class="fas fa-eye"></i></button>
+                        <input type="password" id="passw" required maxlength="64" autocomplete="new-password">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="field" style="position: relative;">
+                        <label for="passw2">Jelszó mégegyszer</label>
+                        <button type="button" class="eye-button" onclick="toggleVisibility('passw2')"><i class="fas fa-eye"></i></button>
+                        <input type="password" id="passw2" required maxlength="64" autocomplete="new-password">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="field">
+                        <label for="bday">Születésnap</label>
+                        <input type="date" id="bday" required autocomplete="bday-month bday-day bday-year">
+                    </div>
+                </div>
+                <div style="font-size: .8rem; margin-top: 32px;">
+                    <input type="checkbox" id="tos">
+                    <label for="tos" style="user-select: none; -moz-user-select: none;" class="default-label">Regisztációmmal elfogadom az <a href="/docs/aszf" target="_blank" rel="noreferrer noopener">ÁSZF-ben</a> leírtakat.</label>
+                </div>
+                <input type="submit" value="Regisztrálás">
+            </form>
+            <p style="font-size: .8rem; color: var(--text-lighter); margin-top: 48px;">Már van fiókja? <a href="/regisztralas">Jelentkezzen be itt.</a></p>
+        </div>
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+    <script src="{{ url_for('static', filename='script/login.js') }}"></script>
+</body>
+
+</html>

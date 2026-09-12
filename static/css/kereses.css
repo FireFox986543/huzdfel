@@ -1,0 +1,230 @@
+main {
+    display: flex;
+    gap: 16px;
+}
+
+main .panel {
+    background: white;
+    display: flex;
+    border-radius: 5px;
+}
+
+main.cat-view {
+    flex-direction: column;
+}
+
+.results {
+    padding: 10px 2px;
+}
+
+.item {
+    display: flex;
+    gap: 6px;
+    height: 200px;
+    padding: 0 12px 0 20px;
+
+    .img-container {
+        height: 100%;
+        min-width: 200px;
+        max-width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 12px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            height: 100%;
+            width: auto;
+            display: block;
+            object-fit: contain;
+            user-select: none;
+            -moz-user-select: none;
+        }
+    }
+
+    .padding {
+        padding: 10px 0;
+    }
+}
+
+.item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.item .right {
+    width: 150px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    button {
+        width: 100%;
+    }
+}
+
+.item .right p {
+    text-align: right;
+}
+
+.item {
+    color: var(--text-light);
+
+    .trademark {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .name {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .description {
+        font-size: 1rem;
+        color: var(--text-lighter);
+        display: -webkit-box;
+        line-clamp: 4;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+    }
+}
+
+p {
+    margin: 0 0 4px;
+}
+
+.stars {
+    color: var(--yellow);
+}
+
+.reviews {
+    color: var(--blue);
+}
+
+.termek-link {
+    display: block;
+    width: fit-content;
+    color: inherit;
+    text-decoration: none;
+}
+
+.termek-link:hover {
+    text-decoration: underline solid currentColor;
+}
+
+.filters {
+    padding-bottom: 8px;
+    position: sticky;
+    top: 12px;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--text-light);
+}
+
+.filters .cat {
+    font-size: 1rem;
+    padding: 0 20px;
+}
+
+.filters .cat>.title {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.filters .cat>.title::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #dadada;
+}
+
+.color-container {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    row-gap: 12px;
+}
+
+#color-panel {
+    --ball-size: 32px;
+}
+
+#color-panel .color-cb {
+    width: var(--ball-size);
+    height: var(--ball-size);
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 9999px;
+    background: var(--color);
+    border: 1px solid var(--border);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    transition: outline-color .2s ease-in-out;
+}
+
+#color-panel .color-cb.active {
+    outline-color: black;
+}
+
+.panel-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    min-height: 52px;
+    background-color: var(--primary);
+    border-radius: 5px 5px 0 0;
+    user-select: none;
+    -moz-user-select: none;
+
+    .title {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+    }
+}
+
+#sort-dropdown {
+    position: relative;
+    display: block;
+    padding: 6px 20px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 9999px;
+}
+
+@media only screen and (max-width: 1600px) {
+    #color-panel {
+        --ball-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #color-panel {
+        --ball-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #color-panel {
+        --ball-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #color-panel {
+        --ball-size: 10px;
+    }
+}

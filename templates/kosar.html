@@ -1,0 +1,72 @@
+{% import 'huzdfel_macros.html' as macros %}
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosár – {{ titlename }}</title>
+    {% include 'huzdfel_resources.html' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/kosar.css') }}">
+</head>
+
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main>
+        <div class="progress">
+            <div class="item active">Kosár</div>
+            <a class="item {{ 'no-sel' if not cart }}" href="/fizetes">Szállítás & Fizetés</a>
+            <div class="item no-sel">Megrendelés</div>
+        </div>
+        {% if cart %}
+        <div style="display: flex; justify-content: end;">
+            <button type="button" onclick="askClearCart()"><i class="fas fa-trash-can" style="margin-left: -6px; margin-right: 8px;"></i>Kosár ürítése</button>
+        </div>
+        <div id="cart">
+            {% for c in cart %}
+            <div class="item">
+                <div class="icon">
+                    <img src="{{ get_icon('pikon', c['image']) }}" alt="{{ c['name'] }} – {{ c['trademark'] }}">
+                </div>
+                <span class="flex-g">
+                    <a href="/termek?v={{ c['id'] }}" class="termek-link">
+                        <b>{{ c['trademark'] }}</b>
+                        <br>
+                        <span>{{ c['name'] }}</span>
+                    </a>
+                    <span class="info">
+                        {{ c['color'] }}
+                        <br>
+                        {{ c.get('size', '') }}
+                    </span>
+                </span>
+                {{ macros.render_quantity(loop.index - 1, c.get('quantity', 0)) }}
+                <span class="price" data-price="{{ c.get('price', 0) }}" id="price-display_{{ loop.index - 1 }}">{{ format_number(c.get('price', 0) * c.get('quantity', 0)) }},- Ft</span>
+                <button type="button" class="remove-btn tooltip tooltip-top" tooltip-text="Termék kitörlése" onclick="removeItem(this)"><i class="fas fa-xmark-large"></i></button>
+            </div>
+            {% endfor %}
+        </div>
+        <hr>
+        <div class="row">
+            <span>Teljes összeg ÁFA nélkül</span>
+            <span id="raw-price">. . .</span>
+        </div>
+        <div class="row">
+            <span style="font-weight: bold;">Fizetendő</span>
+            <span id="full-price">. . .</span>
+        </div>
+        <div class="row" style="height: 50px; margin-top: 40px;">
+            <img src="{{ url_for('static', filename='img/biztonsag.png') }}" alt="Biztonságos kapcsolat." draggable="false">
+            <button type="button" style="font-size: 1.2rem;" onclick="navigate('/fizetes')">Fizetés <i class="fas fa-arrow-up-right-from-square" style="margin-left: 8px;"></i></button>
+        </div>
+        {% else %}
+        <p style="font-weight: bold; font-size: 2rem; text-align: center; margin: 0; margin-top: 200px;">A kosár jelenleg üres.</p>
+        <p style="font-size: 1rem; text-align: center; color: var(--text-lighter);  margin: 0; margin-top: 32px;">Nézzen meg egy kategóriát, vagy használja a keresőmezőt, hogy termékeket hozzáadhasson a kosárhoz!</p>
+        {% endif %}
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+    <script src="{{ url_for('static', filename='script/kosar.js') }}"></script>
+</body>
+
+</html>

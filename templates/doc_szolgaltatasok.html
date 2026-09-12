@@ -1,0 +1,52 @@
+{% import 'huzdfel_macros.html' as macros %}
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szolgáltatások – {{ titlename }}</title>
+    {% set active_tab = 'szolgaltatasok' %}
+    {% include 'huzdfel_resources.html' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/docs.css') }}">
+</head>
+
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main>
+        <h1>Szolgáltatások</h1>
+  <p>Webshopunk célja, hogy a vásárlás ne csak egyszerű, hanem élvezetes és problémamentes legyen. Az alábbi szolgáltatásokkal támogatjuk vásárlóinkat a rendeléstől a viselésig.</p>
+
+  <h2>Termék- és méret tanácsadás</h2>
+  <p>Nem vagy biztos a méretben vagy a fazonban? Gyors, gyakorlati tippeket adunk termékeink illeszkedéséről, valamint személyre szóló méretjavaslatot küldünk e-mailben.</p>
+
+  <h2>Express kiszállítás</h2>
+  <p>Választható express szállítási opció a gyorsabb kézbesítésért. A szállítási idő és díjak a pénztárnál jelennek meg.</p>
+
+  <h2>Ingyenes visszaküldés (feltételekkel)</h2>
+  <p>Rendben van, ha mégsem jó a méret vagy a fazon — 14 napos visszaküldési lehetőség, egyszerű online ügyintézéssel. A visszaküldés részleteit a Visszaküldés menüpontban találod.</p>
+
+  <h2>Ajándékcsomagolás & üzenet</h2>
+  <p>Szeretnéd ajándékként küldeni a rendelést? Kérhetsz elegáns csomagolást és személyes üzenetet, amit mi mellékelünk a csomaghoz.</p>
+
+  <h2>Gyakornoki és személyre szabott szolgáltatások</h2>
+  <p>Styling csomagok: egyéni stílustanácsadás és összeállítások különleges eseményekre. Jelentkezz e-mailben, és egyeztetünk egy személyes konzultációt.</p>
+
+  <h2>Vállalati és viszonteladói együttműködés</h2>
+  <p>Érdekel a nagyobb rendelés, céges ajándék vagy viszonteladás? Kínálunk B2B feltételeket és testreszabott ajánlatokat.</p>
+
+  <h2>Garancia és terméktámogatás</h2>
+  <p>Minden termékre érvényes a garanciális ügyintézés a hibákra. Kérdésed van a termék karbantartásáról? Segítünk – írj nekünk!</p>
+
+  <h2>Kapcsolat</h2>
+  <p>Ha bármelyik szolgáltatásról többet szeretnél megtudni vagy egyedi igényed van, lépj velünk kapcsolatba:</p>
+  <address>
+    E-mail: <a href="mailto:ugyfelszolgalat@huzdfel.hu">ugyfelszolgalat@huzdfel.hu</a><br>
+    Telefonszám: +36 30 450 3333 (H–P: 9:00–17:00)
+  </address>
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+</body>
+
+</html>

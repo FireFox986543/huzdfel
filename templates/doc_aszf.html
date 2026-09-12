@@ -1,0 +1,113 @@
+{% import 'huzdfel_macros.html' as macros %}
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Általános Szerződési Feltételek – {{ titlename }}</title>
+    {% include 'huzdfel_resources.html' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/docs.css') }}">
+</head>
+
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main>
+        <h1>Általános Szerződési Feltételek (ÁSZF)</h1>
+
+        <p>Jelen Általános Szerződési Feltételek (továbbiakban: „ÁSZF”) a Húzdfel.hu Zártkörűen működő részvénytársaság (továbbiakban: „Szolgáltató”, „Húzdfel.hu Webshop”) és a vásárlók (továbbiakban: „Vevő”, „Felhasználó”) jogait és kötelezettségeit szabályozza a <a href="/">www.huzdfel.hu</a> weboldalon keresztül történő termékértékesítés során.</p>
+
+        <p>Az ÁSZF minden vásárlásra érvényes, amely a webáruházon keresztül történik. A rendelés leadásával a Felhasználó elfogadja jelen feltételeket.</p>
+
+        <h2>1. Szolgáltató adatai</h2>
+        <ul>
+            <li><strong>Cégnév:</strong> Húzdfel.hu Zrt.</li>
+            <li><strong>Székhely:</strong> 1054 Budapest, Virág utca 11.</li>
+            <li><strong>Cégjegyzékszám:</strong> 21-01-563321</li>
+            <li><strong>Adószám:</strong> 15378925-2-41</li>
+            <li><strong>E-mail:</strong> <a href="mailto:info@huzdfel.hu">info@huzdfel.hu</a></li>
+            <li><strong>Telefon:</strong> +36 30 450 3333</li>
+        </ul>
+
+        <h2>2. A szerződés tárgya</h2>
+        <p>A Szolgáltató a webáruházon keresztül ruházati és divatkiegészítő termékeket értékesít. A termékek lényeges tulajdonságait és jellemzőit a termékoldalon tüntetjük fel.</p>
+
+        <h2>3. A rendelés menete</h2>
+        <ol>
+            <li>A Felhasználó kiválasztja a megvásárolni kívánt terméket, majd a „Kosárba” gombra kattint.</li>
+            <li>A kosár tartalma a megrendelés véglegesítése előtt bármikor módosítható.</li>
+            <li>A vásárláshoz a Felhasználó megadja a szükséges szállítási és számlázási adatokat.</li>
+            <li>A rendelés elküldésével a Felhasználó elfogadja az ÁSZF-et és a <a href="/docs/adatvedelem">Adatvédelmi tájékoztatót</a>.</li>
+            <li>A megrendelés beérkezéséről a Szolgáltató automatikus e-mailben visszaigazolást küld.</li>
+        </ol>
+
+        <h2>4. Árak és fizetési feltételek</h2>
+        <ul>
+            <li>Az árak forintban (HUF) értendők, és tartalmazzák az Általános Forgalmi Adót (ÁFA).</li>
+            <li>A fizetés történhet:
+                <ul>
+                    <li>Online bankkártyás fizetéssel (Stripe, Barion, SimplePay)</li>
+                    <li>Utánvéttel a futárnál</li>
+                </ul>
+            </li>
+            <li>A Szolgáltató fenntartja a jogot az árak módosítására, de a módosítás a már leadott rendelésekre nem vonatkozik.</li>
+        </ul>
+
+        <h2>5. Szállítási feltételek</h2>
+        <ul>
+            <li>A házhozszállítást szerződött futárszolgálat (GLS, FoxPost) végzi.</li>
+            <li>Szállítási idő általában 2–5 munkanap.</li>
+            <li>Szállítási díj Magyarországon belül: 1 490 Ft, 20 000 Ft feletti rendelés esetén ingyenes.</li>
+        </ul>
+
+        <h2>6. Elállási jog</h2>
+        <p>A fogyasztót a 45/2014. (II. 26.) Korm. rendelet alapján indokolás nélküli elállási jog illeti meg, amelyet a termék átvételétől számított 14 napon belül gyakorolhat.</p>
+
+        <h3>Az elállási jog gyakorlásának módja:</h3>
+        <ul>
+            <li>E-mailben a <a href="mailto:ugyfelszolgalat@huzdfel.hu">ugyfelszolgalat@huzdfel.hu</a> címen, vagy</li>
+            <li>Postai úton írásban a Szolgáltató székhelyére küldött nyilatkozattal.</li>
+        </ul>
+
+        <p>Elállás esetén a terméket eredeti állapotban, saját költségen kell visszaküldeni. A Szolgáltató a visszaküldött termék beérkezésétől számított 14 napon belül visszatéríti a vételárat.</p>
+
+        <h2>7. Kellékszavatosság, termékszavatosság és jótállás</h2>
+        <p>A Szolgáltató a vonatkozó jogszabályoknak megfelelően vállal szavatosságot a termékek hibátlan minőségéért. A hibás termék esetén a vásárló kérheti a kijavítást, cserét, árleszállítást vagy a vételár visszatérítését.</p>
+
+        <h2>8. Panaszkezelés</h2>
+        <p>A vásárlók panaszukat az alábbi elérhetőségeken tehetik meg:</p>
+        <ul>
+            <li>E-mail: <a href="mailto:ugyfelszolgalat@huzdfel.hu">ugyfelszolgalat@huzdfel.hu</a></li>
+            <li>Telefon: +36 30 450 3333</li>
+            <li>Postacím: 1054 Budapest, Virág utca 11.</li>
+        </ul>
+
+        <p>A Szolgáltató a panasz beérkezését követő 5 munkanapon belül válaszol.</p>
+
+        <h2>9. Fogyasztóvédelmi jogorvoslat</h2>
+        <p>Amennyiben a vásárló és a Szolgáltató között fennálló vita nem rendezhető, a fogyasztó a lakóhelye szerinti <strong>Békéltető Testülethez</strong> fordulhat.</p>
+
+        <ul>
+            <li><strong>Budapesti Békéltető Testület</strong></li>
+            <li>Cím: 1016 Budapest, Krisztina krt. 99.</li>
+            <li>Web: <a href="https://bekeltet.bkik.hu" target="_blank" rel="noreferrer noopener">bekeltet.bkik.hu</a></li>
+        </ul>
+
+        <h2>10. Adatvédelem</h2>
+        <p>A vásárlók személyes adatainak kezelése a <a href="/docs/adatvedelem">Adatvédelmi tájékoztatóban</a> foglaltak szerint történik, összhangban az Európai Unió adatvédelmi rendeletével (GDPR).</p>
+
+        <h2>11. Felelősség kizárása</h2>
+        <p>A Szolgáltató nem vállal felelősséget az esetleges technikai hibákból, internetes problémákból vagy külső szolgáltatók hibáiból eredő károkért. A termékfotók illusztrációk, a tényleges termék kis mértékben eltérhet.</p>
+
+        <h2>12. Záró rendelkezések</h2>
+        <ul>
+            <li>Az ÁSZF 2025. október 26. napjától hatályos.</li>
+            <li>A Szolgáltató fenntartja a jogot az ÁSZF módosítására.</li>
+            <li>A módosításokat a weboldalon tesszük közzé, és a megjelenést követően lépnek hatályba.</li>
+        </ul>
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+</body>
+
+</html>

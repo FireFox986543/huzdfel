@@ -1,0 +1,79 @@
+{% import 'huzdfel_macros.html' as macros %}
+{% set full_name = product['name'] + ' – ' + product['trademark'] %}
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ full_name }} – {{ titlename }}</title>
+    {% include 'huzdfel_resources.html' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/termek.css') }}">
+</head>
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main>
+        {# Kiírja az utat a type_info által megadott path listából #}
+        <p>
+            Kezdőlap
+            {% for p in type_info.get('path', []) %}
+            &nbsp;&nbsp;/&nbsp;&nbsp; {{ p }}
+            {% endfor %}
+        </p>
+        <div class="main-display">
+            <div class="gallery">
+                <img src="{{ get_icon('nagy', product['variants'][0]['path']) }}" alt="{{ full_name }}" fetchpriority="high" id="main-img" draggable="false">
+            </div>
+            <div class="info">
+                <span id="trademark">{{ product['trademark'] }}</span>
+                <span id="name">{{ product['name'] }}</span>
+                <span id="price">{{ format_number(product['price']) }},- Ft</span>
+                <span id="stars">
+                    <span class="star-list">
+                        {% for s in stars %}
+                            {% if s == 0 %}
+                                <i class="far fa-star"></i>
+                            {% elif s == 1 %}
+                                <i class="fas fa-star-half-stroke"></i>
+                            {% else %}
+                                <i class="fas fa-star"></i>
+                            {% endif %}
+                        {% endfor %}
+                    </span>
+                    <span class="reviews">{{ product['reviews'] }} vélemény</span>
+                </span>
+                <span id="description">{{ product['description'] }}</span>
+                <div class="list-container">
+                    <strong>Szín: </strong><span id="color">{{ product['variants'][0]['name'] }}</span>
+                    <div class="list" id="color-list">
+                        {% for v in product['variants'] %}
+                        <div class="element tooltip" data-color-id="{{ v['color'] }}" data-path="{{ get_icon('nagy', v['path']) }}" data-display-text="{{ v['name'] }}" onclick="colorSelected(this)" tooltip-text="{{ v['name']|capitalize }}">
+                            <img src="{{ get_icon('pikon', v['path']) }}" alt="{{ v['name'] }}" draggable="false">
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% if type_info['sizes'] %}
+                <div class="list-container">
+                    <strong>Méret: </strong><span id="size">{{ type_info['sizes'][0] }}</span>
+                    <div class="list" id="size-list">
+                        {% for s in type_info['sizes'] %}
+                        <div class="element" data-size-id="{{ s }}" onclick="sizeSelected(this)">
+                            {{ s }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+                <div class="flex" style="margin-top: 40px;">
+                    {{ macros.render_quantity(0, 1) }}
+                    <button type="button" class="cart-btn" data-id="{{ product['id'] }}" onclick="addToCart(this.dataset.id)">Kosárba teszem</button>
+                    <!-- <button type="button" class="heart-btn tooltip tooltip-top" tooltip-text="Kívánságlistára"><i class="fas fa-heart-circle-plus"></i></button> -->
+                </div>
+            </div>
+        </div>
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+    <script src="{{ url_for('static', filename='script/termek.js') }}"></script>
+</body>
+</html>

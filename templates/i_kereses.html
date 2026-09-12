@@ -1,0 +1,41 @@
+<div class="results" style="width: 100%;">
+    {% if results != [] %}
+        {% for r in results %}
+        {% set link_to = '/termek?v=' + r['id'] %}
+        <div class="item">
+            <div class="img-container" onclick="navigateAttr(this)" data-href="{{ link_to }}" style="cursor: pointer;">
+                <img src="{{ get_icon('ikon', r['image']) }}" alt="{{ r['name'] }} – {{ r['trademark'] }}" draggable="false">
+            </div>
+            <div class="flex-g padding">
+                <a href="{{ link_to }}" class="termek-link">
+                    <p class="trademark">{{ r['trademark'] }}</p>
+                    <p class="name">{{ r['name'] }}</p>
+                </a>
+                <p class="description">{{ r['description'] }}</p>
+            </div>
+            <div class="right padding">
+                <div>
+                    <p style="font-size: 1.18rem; font-weight: 500;">{{ format_number(r['price']) }},- Ft</p>
+                    <span class="stars">
+                        <span class="star-list">
+                            {% for s in get_stars(r) %}
+                            {% if s == 0 %}
+                            <i class="far fa-star"></i>
+                            {% elif s == 1 %}
+                            <i class="fas fa-star-half-stroke"></i>
+                            {% else %}
+                            <i class="fas fa-star"></i>
+                            {% endif %}
+                            {% endfor %}
+                        </span>
+                    </span>
+                    <p class="reviews">{{ r['reviews'] }} vélemény</p>
+                </div>
+                <!-- <button><i class="far fa-cart-plus"></i> Kosárba</button> -->
+            </div>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p style="text-align: center; font-size: 2rem; font-weight: bold; margin-top: 180px;">Nincs találat!</p>
+    {% endif %}
+</div>

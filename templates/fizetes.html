@@ -1,0 +1,106 @@
+{% import 'huzdfel_macros.html' as macros %}
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizetés – {{ titlename }}</title>
+    {% include 'huzdfel_resources.html' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/kosar.css') }}">
+</head>
+
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main>
+        <div class="progress">
+            <a class="item" href="/kosar">Kosár</a>
+            <div class="item active">Szállítás & Fizetés</div>
+            <a class="item" href="/megrendeles">Megrendelés</a>
+        </div>
+        <form action="/" style="margin: 20px auto;">
+            <div class="card">
+                <span>Milyen címre szállíthatjuk rendelésedet?</span>
+                <div class="form-row">
+                    <div class="field">
+                        <label for="name">Név, cégnév</label>
+                        <input type="text" id="name" required maxlength="64" autocomplete="name" placeholder="Almásy Andrea">
+                    </div>
+                </div>
+                <div class="form-row col-2">
+                    <div class="field">
+                        <label for="email">Email cím</label>
+                        <input type="email" id="email" required autocomplete="email" placeholder="pelda@gmail.com">
+                    </div>
+                    <div class="field">
+                        <label for="phone">Telefon szám</label>
+                        <input type="tel" id="phone" required autocomplete="tel" placeholder="+36 20 123 4567">
+                    </div>
+                </div>
+                <div class="form-row col-2">
+                    <div class="field">
+                        <label for="zipcode">Irányítószám</label>
+                        <input type="number" required id="zipcode" placeholder="1234" autocomplete="postal-code">
+                    </div>
+                    <div class="field">
+                        <label for="place">Település</label>
+                        <input type="text" required id="place" placeholder="Kukutyin" autocomplete="address-level2">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="field">
+                        <label for="street">Utca / házszám</label>
+                        <input type="text" required id="street" placeholder="Szabadság utca 42" autocomplete="address-line1">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <span>Fizetési mód</span>
+                <div class="form-row cb-row" onclick="selectThis(this)">
+                    <div class="cb"></div>
+                    <span>Bankkártyával online</span>
+                </div>
+                <div class="form-row cb-row" onclick="selectThis(this)" data-mode="utanvet">
+                    <div class="cb"></div>
+                    <div class="flex" style="justify-content: space-between; width: 100%;">
+                        <span>Átvételkor készpénzzel</span>
+                        <span><b>+490 Ft</b> utánvét díj</span>
+                    </div>
+                </div>
+            </div>
+            <div id="cc-card">
+                <div class="card">
+                    <span>Bankkártyás fizetés</span>
+                    <div class="from-row">
+                        <div class="field">
+                            <label for="place">Bankkártyaszám</label>
+                            <input type="text" id="card" autocomplete="cc-number">
+                        </div>
+                    </div>
+                    <div class="from-row col-2">
+                        <div class="field">
+                            <label for="place">Érvényesség</label>
+                            <input type="text" id="exp" placeholder="01/31" autocomplete="cc-exp">
+                        </div>
+                        <div class="field">
+                            <label for="place">CVC / CVV</label>
+                            <input type="text" id="cvc" placeholder="123" autocomplete="cc-csc">
+                        </div>
+                    </div>
+                    <div class="from-row">
+                        <div class="field">
+                            <label for="place">Kártyára írt név</label>
+                            <input type="text" id="cardname" placeholder="Amásy Andrea" autocomplete="cc-name">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Megrendelés">
+        </form>
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+    <script src="{{ url_for('static', filename='script/fizetes.js') }}"></script>
+</body>
+
+</html>

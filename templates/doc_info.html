@@ -1,0 +1,70 @@
+{% import 'huzdfel_macros.html' as macros %}
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Információ – {{ titlename }}</title>
+    {% set active_tab = 'info' %}
+    {% include 'huzdfel_resources.html' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/docs.css') }}">
+</head>
+
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main>
+        <h1>Információ</h1>
+        <p>Üdvözlünk webshopunkban! Az alábbiakban minden fontos tudnivalót megtalálsz vásárlásról, szállításról, fizetésről és ügyfélszolgálatunkról.</p>
+
+        <h2>Rólunk</h2>
+        <p>Webáruházunk célja, hogy modern, elérhető és minőségi ruházatot kínáljunk minden korosztálynak. Termékeinket gondosan válogatjuk, hogy a divat mellett a kényelem is elsődleges legyen.</p>
+
+        <h2>Vásárlás menete</h2>
+        <ol>
+            <li>Válaszd ki a kívánt terméket és méretet.</li>
+            <li>Tedd a kosárba.</li>
+            <li>Add meg szállítási és fizetési adataidat.</li>
+            <li>Erősítsd meg rendelésed, és mi hamarosan küldjük a visszaigazolást e-mailben.</li>
+        </ol>
+
+        <h2>Fizetési lehetőségek</h2>
+        <ul>
+            <li>Bankkártyás fizetés (Visa, MasterCard, Maestro)</li>
+            <li>Utánvét (készpénzzel vagy kártyával a futárnál)</li>
+        </ul>
+
+        <h2>Szállítás</h2>
+        <p>Rendeléseidet megbízható futárszolgálattal kézbesítjük. A szállítási idő általában 1–3 munkanap. 20 000 Ft feletti rendelés esetén a kiszállítás <strong>ingyenes</strong>.</p>
+
+        <h2>Visszaküldés és csere</h2>
+        <p>Amennyiben a termék nem megfelelő, 14 napon belül visszaküldheted. Kérésed szerint cserét vagy visszatérítést biztosítunk. A részletes szabályzatot a <a href="/docs/aszf">ÁSZF-ben</a> találod.</p>
+
+        <h2>Adatvédelem</h2>
+        <p>Személyes adataidat bizalmasan kezeljük, és kizárólag a rendelés teljesítéséhez használjuk fel. Részletes tájékoztatónkat az <a href="/docs/adatvedelem">Adatvédelmi szabályzatban</a> olvashatod.</p>
+
+        <h2>Kapcsolat</h2>
+        <p>Ügyfélszolgálatunk készséggel segít minden kérdésben:</p>
+        <p>
+        <address>
+            E-mail: <a href="mailto:ugyfelszolgalat@huzdfel.hu">ugyfelszolgalat@huzdfel.hu</a><br>
+            Telefonszám: +36 30 450 3333<br>
+            Elérhetőség: Hétfő–Péntek, 9:00–17:00
+        </address>
+        </p>
+
+        <h2>Hasznos oldalak</h2>
+        <ul>
+            <li><a href="/docs/adatvedelem">Adatvédelmi tájékoztató</a></li>
+            <li><a href="/docs/cookie">Cookie (Süti) tájékoztató</a></li>
+            <li><a href="/docs/aszf">Általános Szerződési Feltételek (ÁSZF)</a></li>
+            <li><a href="/docs/karrier">Karrier</a></li>
+        </ul>
+
+        <p><strong>Frissítve:</strong> 2025. október 26.</p>
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+</body>
+
+</html>

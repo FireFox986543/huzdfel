@@ -1,0 +1,75 @@
+{% macro render_checkbox(name, id) %}
+<input type="checkbox" id="{{ id }}" class="checkbox">
+<label for="{{ id }}" class="checkbox-label">{{ name }}</label>
+{% endmacro %}
+
+{% macro render_color_cb(name, id, color, color2) %}
+<button type="button" id="{{ id }}" class="color-cb tooltip tooltip-bottom" style="--color: {{ color }}; --border: {{ color2 }}" tooltip-text="{{ name|capitalize }}">
+{% endmacro %}
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ cat_name if cat_view else q }} – {{ titlename }}</title>
+    {% include 'huzdfel_resources.html' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/kereses.css') }}">
+</head>
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main class="{{ 'cat-view' if cat_view }}">
+        {% if not cat_view %}
+        <div style="width: 25%; position: relative;">
+            <div class="filters panel">
+                <div class="panel-top">
+                    <span class="title">szűrők</span>
+                </div>
+                <div class="cat" id="category-panel">
+                    <span class="title">kategória</span>
+                    {% for c in category_list %}
+                    {{ render_checkbox(c[1], c[0]) }}
+                    {% endfor %}
+                </div>
+                <div class="cat" id="color-panel">
+                    <span class="title">szín</span>
+                    <div class="color-container">
+                        {% for i, t in colors.items() %}
+                        {{ render_color_cb(t[2], i, t[0], t[1]) }}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="header" style="cursor: auto; margin-top: 20px;">
+            <h2>{{ cat_name }}</h2>
+        </div>
+        {% endif %}
+        <div style="flex: 1;" class="panel flex-col">
+            <div class="panel-top">
+                <span class="title">keresési eredmény</span>
+                <span id="sort-dropdown" class="dropdown-container">
+                    <b>Rendezés:</b> <span class="dropdown-value">A-tól Z-ig</span>
+                    <div class="dropdown">
+                        <span data-value="az" class="active">A-tól Z-ig</span>
+                        <span data-value="za">Z-től A-ig</span>
+                        <span data-value="tmaz">A-tól Z-ig (Márka)</span>
+                        <span data-value="tmza">Z-től A-ig (Márka)</span>
+                        <span data-value="price">Ár szerint növekvő</span>
+                        <span data-value="pricel">Ár szerint csökkenő</span>
+                        <span data-value="review">Értékelés szerint növekvő</span>
+                        <span data-value="reviewl">Értékelés szerint csökkenő</span>
+                    </div>
+                </span>
+            </div>
+            <div id="load-content">
+            </div>
+        </div>
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+    <script src="{{ url_for('static', filename='script/kereses.js') }}"></script>
+</body>
+
+</html>

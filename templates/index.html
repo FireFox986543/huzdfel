@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kezdőlap – {{ titlename }}</title>
+    {% set active_tab = 'kezdolap' %}
+    {% include 'huzdfel_resources.html' %}
+</head>
+
+<body>
+    {% include 'huzdfel_navbar.html' %}
+    <main>
+        <div class="welcome-wrapper">
+            <div id="carousel-wrapper">
+                <div class="carousel" onclick="navigate('/promociok')" style="cursor: pointer;">
+                    <div id="transformer">
+                        <div class="carousel-item"><img src="{{ url_for('static', filename='img/carousel/1.png') }}" alt="" draggable="false" fetchpriority="high"></div>
+                        <div class="carousel-item"><img src="{{ url_for('static', filename='img/carousel/2.png') }}" alt="" draggable="false" fetchpriority="low"></div>
+                        <div class="carousel-item"><img src="{{ url_for('static', filename='img/carousel/3.png') }}" alt="" draggable="false" fetchpriority="low"></div>
+                        <!-- Same as first one -->
+                        <div class="carousel-item"><img src="{{ url_for('static', filename='img/carousel/1.png') }}" alt="" draggable="false" fetchpriority="high"></div>
+                    </div>
+                </div>
+                <div id="carousel-buttons">
+                    <button type="button" class="carousel-btn active" onclick="changeCarousel(0)"></button>
+                    <button type="button" class="carousel-btn" onclick="changeCarousel(1)"></button>
+                    <button type="button" class="carousel-btn" onclick="changeCarousel(2)"></button>
+                </div>
+            </div>
+            <div class="welcome-container">
+                <p class="title">köszöntő</p>
+                <p>Üdv a HúzdFel.HU-n, ahol a stílus nem luxus, hanem alapfelszerelés! 👕✨ Itt nem kell órákat vacillálnod a tükör előtt — csak húzd fel, és máris úgy nézel ki, mintha épp egy divatlapból léptél volna elő.</p>
+                <p>Kínálatunkban mindent megtalálsz, a „csak leugrom kenyérért” szettől a „ma mindenki engem néz” outfitekig. Ne aggódj, ha nem vagy divatszakértő — mi azért vagyunk, hogy helyetted is tudjuk, mi áll jól. 😉</p>
+                <p class="last">Szóval ne húzd az időt… csak HúzdFel!</p>
+            </div>
+        </div>
+        <div id="products">
+            {% for p in display_products %}
+            {% set outer_index = loop.index %}
+            <div class="product-group">
+                <div class="header" onclick="navigateAttr(this)" data-href="/kereses?v=True&c={{ convert_cat(p[1]) }}">
+                    <h2>{{ p[0] }}</h2>
+                </div>
+                <div class="product-list">
+                    {% for i in p[2] %}
+                    <div class="container" onclick="itemClick(this)" data-product-id="{{ i['id'] }}">
+                        <div class="product">
+                            <div class="img-container">
+                                <img src="{{ get_icon('ikon', i['path']) }}" alt="{{ i['trademark'] }} – {{ i['name'] }}" draggable="false" loading="{{ 'eager' if outer_index == 1 else 'lazy' }}">
+                            </div>
+                            <div class="desc">
+                                <span>
+                                    <b>{{ i.get('trademark') }}</b><br>
+                                    <span class="description">{{ i.get('name') }}</span>
+                                </span>
+                                <span class="price">{{ format_number(i.get('price')) }},- Ft</span>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+    {% include 'huzdfel_footer.html' %}
+    {% include 'huzdfel_scripts.html' %}
+    <script src="{{ url_for('static', filename='script/index.js') }}"></script>
+</body>
+
+</html>
